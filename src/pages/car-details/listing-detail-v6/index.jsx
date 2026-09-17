@@ -1,5 +1,5 @@
 import CarDetails from "@/components/car-details";
-import Footer1 from "@/components/footers/Footer1";
+import Footer1 from "@/components/footer/Footer1";
 import Header2 from "@/components/headers/Header5";
 import React from "react";
 import MetaComponent from "@/components/common/MetaComponent";

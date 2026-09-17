@@ -1,5 +1,5 @@
 import Cars1 from "@/components/carsListings/Cars1";
-import Footer1 from "@/components/footers/Footer1";
+import Footer1 from "@/components/footer/Footer1";
 import Header2 from "@/components/headers/Header2";
 import React from "react";
 import { Link } from "react-router-dom";

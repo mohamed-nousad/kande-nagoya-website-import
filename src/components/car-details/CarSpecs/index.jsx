@@ -1,18 +1,18 @@
 import React from "react";
 
 const formatDate = (d) => {
-  if (!d) return "—";
+  if (!d) return "-";
   const date = new Date(d);
-  if (isNaN(date)) return "—";
+  if (isNaN(date)) return "-";
   return `${date.getFullYear()}/${date.getMonth() + 1}`;
 };
 
 const formatNum = (n, suffix = "") => {
-  if (n === null || n === undefined || n === "") return "—";
+  if (n === null || n === undefined || n === "") return "-";
   return `${Number(n).toLocaleString()}${suffix}`;
 };
 
-const val = (value) => (!value ? "—" : value);
+const val = (value) => (!value ? "-" : value);
 
 const NOTES = [
   { text: "*[Registration Year/month] is a registration date in Stock Country.", bold: false },

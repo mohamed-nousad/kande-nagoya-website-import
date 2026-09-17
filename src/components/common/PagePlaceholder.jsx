@@ -1,7 +1,7 @@
 import React from "react";
 import MetaComponent from "@/components/common/MetaComponent";
-import SiteHeader from "@/components/homes/home-11/sections/SiteHeader";
-import SiteFooter from "@/components/homes/home-11/sections/SiteFooter";
+import SiteHeader from "@/components/home/sections/SiteHeader";
+import Footer1 from "../footers/Footer1";
 
 export default function PagePlaceholder({ title }) {
   return (
@@ -15,7 +15,7 @@ export default function PagePlaceholder({ title }) {
             <p>This page is coming soon.</p>
           </div>
         </section>
-        <SiteFooter />
+        <Footer1 />
       </div>
     </>
   );

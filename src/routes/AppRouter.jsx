@@ -1,10 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import HomePage2 from "@/pages/homes/home02";
-import HomePage5 from "@/pages/homes/home05";
-import HomePage7 from "@/pages/homes/home07";
-import HomePage8 from "@/pages/homes/home08";
-import HomePage9 from "@/pages/homes/home09";
-import HomePage11 from "@/pages/homes/home11";
+import Home from "@/pages/home";
 import SignupLoginPage from "@/pages/auth/SignupLoginPage";
 import StockListPage from "@/pages/car-listings/stock-list";
 import BlogListingDetailsPage6 from "@/pages/car-details/listing-detail-v6";
@@ -20,25 +15,11 @@ import Vehicles from "@/pages/Vehicles";
 import Testimonials from "@/pages/Testimonials";
 import Contact from "@/pages/Contact";
 
-const PORT = Number(window.location.port || 5000);
-
-const LandingByPort = {
-  5000: HomePage11,
-  5001: HomePage2,
-  5002: HomePage5,
-  5003: HomePage7,
-  5004: HomePage8,
-  5005: HomePage9,
-};
-
-const LandingComponent = LandingByPort[PORT] || HomePage11;
-
 function AppRouter() {
   return (
     <Routes>
       <Route element={<PublicRoute />}>
-        <Route index element={<LandingComponent />} />
-        <Route path="home11" element={<HomePage11 />} />
+        <Route index element={<Home />} />
         <Route path="login" element={<SignupLoginPage />} />
         <Route path="stock-list" element={<StockListPage />} />
         <Route path="listing-detail-v6/:id" element={<BlogListingDetailsPage6 />} />

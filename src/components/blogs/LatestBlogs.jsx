@@ -1,5 +1,5 @@
-import BlogCard from "../homes/home-11/BlogCard";
-import SeeMoreButton from "../homes/home-11/SeeMoreButton";
+import BlogCard from "../home/BlogCard";
+import SeeMoreButton from "../home/SeeMoreButton";
 import latestBlogsData from "../../data/latestBlogsData";
 
 const LatestBlogs = () => {

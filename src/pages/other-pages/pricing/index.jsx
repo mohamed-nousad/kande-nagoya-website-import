@@ -1,5 +1,5 @@
 import Brands from "@/components/common/Brands";
-import Footer1 from "@/components/footers/Footer1";
+import Footer1 from "@/components/footer/Footer1";
 import Header2 from "@/components/headers/Header2";
 import Pricing from "@/components/otherPages/pricing/Pricing";
 import React from "react";

@@ -1,7 +1,7 @@
 import { useGetPopularVehiclesQuery } from "@/store/api/webStockApi";
-import VehicleCard from "../homes/home-11/VehicleCard";
-import SeeMoreButton from "../homes/home-11/SeeMoreButton";
-import { PopularVehicleIcon } from "../homes/home-11/Icon";
+import VehicleCard from "../home/VehicleCard";
+import SeeMoreButton from "../home/SeeMoreButton";
+import { PopularVehicleIcon } from "../home/Icon";
 import { DEFAULT_CARD_LIMIT } from "@/constants";
 
 const PopularVehicles = () => {

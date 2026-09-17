@@ -1,4 +1,4 @@
-import CtaCard from "../../components/homes/home-11/CtaCard";
+import CtaCard from "../../componen../home/CtaCard";
 import ctaData from "../../data/ctaData";
 
 const CtaSection = () => {

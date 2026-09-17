@@ -1,52 +1,84 @@
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import MetaComponent from "@/components/common/MetaComponent";
-import SiteHeader from "@/components/homes/home-11/sections/SiteHeader";
-import SiteFooter from "@/components/homes/home-11/sections/SiteFooter";
-import LeftSidebar from "@/components/common/leftSidebar";
-import RightSidebar from "@/components/common/rightSidebar";
-import VehicleSearchFilter from "@/components/stock-list/VehicleSearchFilter";
-import PriceCalculator from "@/components/stock-list/PriceCalculator";
-import SearchResultsHeader from "@/components/stock-list/SearchResultsHeader";
-import StockVehicleList from "@/components/stock-list/StockVehicleList";
-import RecommendedVehicles from "@/components/vehicle-listings/RecommendedVehicles";
-import CustomerTestimonials from "@/components/testimonials/CustomerTestimonials";
-import ExploreToyotaModels from "@/components/explore-vehicles/ExploreToyotaModels";
+import SiteHeader from "@/components/home/sections/SiteHeader";
+import VehicleCard from "@/components/home/VehicleCard";
+import { bestDealVehicles } from "@/data/homeShowcaseData";
+import Footer1 from "@/components/footer/Footer1";
 
 const metadata = {
-  title: "Stock List | Wheels Lanka Trading",
-  description: "Browse the Wheels Lanka Trading vehicle stock list.",
+  title: "Vehicle Listing | Wheels Lanka Trading",
+  description: "Browse the full vehicle stock at Wheels Lanka Trading.",
 };
 
+const BRANDS = ["All Brands", "Toyota", "Honda", "Nissan", "Mazda", "Suzuki", "Mitsubishi", "BMW"];
+const TYPES = ["All Types", "SUV", "Sedan", "Hatchback", "Coupe", "Wagon", "Van"];
+const FUELS = ["Any Fuel", "Petrol", "Diesel", "Hybrid", "Electric"];
+const SORTS = ["Newest First", "Price: Low to High", "Price: High to Low", "Low Mileage"];
+
 export default function StockListPage() {
+  const [filters, setFilters] = useState({
+    brand: BRANDS[0],
+    type: TYPES[0],
+    fuel: FUELS[0],
+    sort: SORTS[0],
+  });
+  const setField = (key, value) => setFilters((p) => ({ ...p, [key]: value }));
+
   return (
     <>
       <MetaComponent meta={metadata} />
-
       <div className="kande-home">
         <SiteHeader solid />
-      </div>
 
-      <div className="stock-list-page">
-        <LeftSidebar />
+        <section className="listing-page">
+          <div className="container-wide">
+            <div className="listing-head">
+              <div>
+                <h1>Vehicle Listing</h1>
+                <p>Explore our full stock of quality vehicles ready for you.</p>
+              </div>
+              <Link className="listing-back" to="/">Back to Home</Link>
+            </div>
 
-        <main className="stock-list-main">
-          <VehicleSearchFilter />
-          <PriceCalculator />
-          <SearchResultsHeader />
-          <StockVehicleList />
-          <RecommendedVehicles />
-          <CustomerTestimonials />
-          <ExploreToyotaModels />
-        </main>
+            <div className="listing-toolbar">
+              <label className="listing-field">
+                <span>Brand</span>
+                <select value={filters.brand} onChange={(e) => setField("brand", e.target.value)}>
+                  {BRANDS.map((b) => <option key={b}>{b}</option>)}
+                </select>
+              </label>
+              <label className="listing-field">
+                <span>Body Type</span>
+                <select value={filters.type} onChange={(e) => setField("type", e.target.value)}>
+                  {TYPES.map((t) => <option key={t}>{t}</option>)}
+                </select>
+              </label>
+              <label className="listing-field">
+                <span>Fuel</span>
+                <select value={filters.fuel} onChange={(e) => setField("fuel", e.target.value)}>
+                  {FUELS.map((f) => <option key={f}>{f}</option>)}
+                </select>
+              </label>
+              <label className="listing-field">
+                <span>Sort By</span>
+                <select value={filters.sort} onChange={(e) => setField("sort", e.target.value)}>
+                  {SORTS.map((s) => <option key={s}>{s}</option>)}
+                </select>
+              </label>
+            </div>
 
-        <div className="stock-list-right-sidebar">
-          <RightSidebar />
-        </div>
-      </div>
+            <div className="listing-count">{bestDealVehicles.length} vehicles found</div>
 
-      <div className="mt-5 pt-5"></div>
+            <div className="listing-grid">
+              {bestDealVehicles.map((v) => (
+                <VehicleCard key={v.id} vehicle={v} badgeText="In Stock" />
+              ))}
+            </div>
+          </div>
+        </section>
 
-      <div className="kande-home">
-        <SiteFooter />
+        <Footer1 />
       </div>
     </>
   );

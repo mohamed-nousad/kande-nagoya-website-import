@@ -1,4 +1,4 @@
-import SeeMoreButton from "../homes/home-11/SeeMoreButton";
+import SeeMoreButton from "../home/SeeMoreButton";
 
 const popularModels = [
   [

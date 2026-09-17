@@ -32,13 +32,13 @@ export default function SamplePagination() {
             <tbody>
               {items.map((v) => (
                 <tr key={v._id} style={{ borderBottom: "1px solid #e5e7eb" }}>
-                  <td style={{ padding: "10px 12px" }}>{v.kandeNo    || "—"}</td>
-                  <td style={{ padding: "10px 12px" }}>{v.make       || "—"}</td>
-                  <td style={{ padding: "10px 12px" }}>{v.model      || "—"}</td>
-                  <td style={{ padding: "10px 12px" }}>{v.chassisNo  || "—"}</td>
-                  <td style={{ padding: "10px 12px" }}>{v.manufactureYear ? new Date(v.manufactureYear).getFullYear() : "—"}</td>
-                  <td style={{ padding: "10px 12px" }}>{v.color     || "—"}</td>
-                  <td style={{ padding: "10px 12px" }}>{v.vehicleStatus || "—"}</td>
+                  <td style={{ padding: "10px 12px" }}>{v.kandeNo    || "-"}</td>
+                  <td style={{ padding: "10px 12px" }}>{v.make       || "-"}</td>
+                  <td style={{ padding: "10px 12px" }}>{v.model      || "-"}</td>
+                  <td style={{ padding: "10px 12px" }}>{v.chassisNo  || "-"}</td>
+                  <td style={{ padding: "10px 12px" }}>{v.manufactureYear ? new Date(v.manufactureYear).getFullYear() : "-"}</td>
+                  <td style={{ padding: "10px 12px" }}>{v.color     || "-"}</td>
+                  <td style={{ padding: "10px 12px" }}>{v.vehicleStatus || "-"}</td>
                 </tr>
               ))}
             </tbody>

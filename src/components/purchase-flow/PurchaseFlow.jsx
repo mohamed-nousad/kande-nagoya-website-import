@@ -4,7 +4,7 @@ import {
   PurchasePaymentIcon,
   PurchaseShipmentIcon,
   PurchaseDeliveryIcon,
-} from "../homes/home-11/Icon";
+} from "../home/Icon";
 
 const PurchaseFlow = () => {
   return (
@@ -37,7 +37,7 @@ const PurchaseFlow = () => {
                 className="quotation-btn"
               >
                 <img
-                  src="/assets/images/home-11/icon-svg/email.svg"
+                  src="/assets/icons/default-placeholder.svg"
                   alt="email"
                 />
                 Get a free quotation
@@ -82,13 +82,13 @@ const PurchaseFlow = () => {
       <div className="purchase-payment-right">
 <div className="payment-card-row">
   <img
-    src="/assets/images/home-11/icon-svg/visa.svg"
+    src="/assets/icons/default-placeholder.svg"
     alt="visa"
   />
 
   <div className="payment-card-box">
     <img
-      src="/assets/images/home-11/icon-svg/master.svg"
+      src="/assets/icons/default-placeholder.svg"
       alt="master"
     />
   </div>
@@ -96,7 +96,7 @@ const PurchaseFlow = () => {
   <div className="payment-american-box">
     <img
       className="payment-american"
-      src="/assets/images/home-11/icon-svg/american.svg"
+      src="/assets/icons/default-placeholder.svg"
       alt="american"
     />
   </div>
@@ -104,23 +104,23 @@ const PurchaseFlow = () => {
 
         <div className="payment-paypal-row">
           <img
-            src="/assets/images/home-11/icon-svg/paypal.svg"
+            src="/assets/icons/default-placeholder.svg"
             alt="paypal icon"
           />
 
           <img
-            src="/assets/images/home-11/icon-svg/pay.svg"
+            src="/assets/icons/default-placeholder.svg"
             alt="pay"
           />
           <img
-            src="/assets/images/home-11/icon-svg/pal.svg"
+            src="/assets/icons/default-placeholder.svg"
             alt="pal"
           />
         </div>
 
         <img
           className="payment-bank-transfer"
-          src="/assets/images/home-11/icon-svg/bank-transfer.svg"
+          src="/assets/icons/default-placeholder.svg"
           alt="bank transfer"
         />
       </div>

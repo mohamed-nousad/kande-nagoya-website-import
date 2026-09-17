@@ -1,7 +1,7 @@
 import { useState } from "react";
 import LeftSidebar from "@/components/profile/LeftSidebar";
 import BrowsingHistory from "@/components/profile/myAccount/BrowsingHistory";
-import Footer1 from "@/components/footers/Footer1";
+import Footer1 from "@/components/footer/Footer1";
 import Header5 from "@/components/headers/Header5";
 import MetaComponent from "@/components/common/MetaComponent";
 import InquiredCars from "@/components/profile/myOrders/InquiredCars";

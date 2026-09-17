@@ -4,7 +4,7 @@ export const testimonialData = [
     name: "Mr. Justin",
     country: "Pakistan",
     rating: "5/5",
-    image: "/assets/images/home-11/testimonial-1.png",
+    image: "/assets/images/home/testimonial.png",
     review: "Kan-de is amazing. The best dealer ever!"
   },
   {
@@ -12,7 +12,7 @@ export const testimonialData = [
     name: "Mr. Justin",
     country: "Pakistan",
     rating: "5/5",
-    image:"/assets/images/home-11/testimonial-1.png",
+    image:"/assets/images/home/testimonial.png",
     review: "Kan-de is amazing. The best dealer ever!"
   },
   {
@@ -20,7 +20,7 @@ export const testimonialData = [
     name: "Mr. Justin",
     country: "Pakistan",
     rating: "5/5",
-    image:"/assets/images/home-11/testimonial-1.png",
+    image:"/assets/images/home/testimonial.png",
     review: "Kan-de is amazing. The best dealer ever!"
   },
   {
@@ -28,7 +28,7 @@ export const testimonialData = [
     name: "Mr. Justin",
     country: "Pakistan",
     rating: "5/5",
-    image:"/assets/images/home-11/testimonial-1.png",
+    image:"/assets/images/home/testimonial.png",
     review: "Kan-de is amazing. The best dealer ever!"
   },
   {
@@ -36,7 +36,7 @@ export const testimonialData = [
     name: "Mr. Justin",
     country: "Pakistan",
     rating: "5/5",
-    image: "/assets/images/home-11/testimonial-1.png",
+    image: "/assets/images/home/testimonial.png",
     review: "Kan-de is amazing. The best dealer ever!"
   },
   {
@@ -44,7 +44,7 @@ export const testimonialData = [
     name: "Mr. Justin",
     country: "Pakistan",
     rating: "5/5",
-    image: "/assets/images/home-11/testimonial-1.png",
+    image: "/assets/images/home/testimonial.png",
     review: "Kan-de is amazing. The best dealer ever!"
   }
 ];

@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { useGetLowMileageQuery } from "@/store/api/webStockApi";
-import VehicleCard from "../homes/home-11/VehicleCard";
-import SeeMoreButton from "../homes/home-11/SeeMoreButton";
+import VehicleCard from "../home/VehicleCard";
+import SeeMoreButton from "../home/SeeMoreButton";
 
 const mileageFilters = [
   "Less than",

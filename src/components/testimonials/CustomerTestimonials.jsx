@@ -1,6 +1,6 @@
-import TestimonialCard from "../../components/homes/home-11/TestimonialCard";
+import TestimonialCard from "@/components/home/TestimonialCard";
 import { testimonialData } from "../../data/testimonialData";
-import { RightArrowIcon } from "../../components/homes/home-11/Icon";
+import { RightArrowIcon } from "@/components/home/Icon";
 
 const CustomerTestimonials = () => {
   return (

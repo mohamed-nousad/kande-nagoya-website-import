@@ -1,4 +1,4 @@
-import Footer1 from "@/components/footers/Footer1";
+import Footer1 from "@/components/footer/Footer1";
 import Header2 from "@/components/headers/Header2";
 import Compare from "@/components/otherPages/Compare";
 import React from "react";

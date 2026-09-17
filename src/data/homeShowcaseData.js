@@ -1,4 +1,4 @@
-const IMG = "/assets/images/home-11/wcu-1.png";
+const IMG = "/assets/images/default-car.png";
 
 const makeVehicle = (id) => ({
   id: String(id),
@@ -16,3 +16,12 @@ export const collectionVehicles = Array.from({ length: 4 }, (_, i) => makeVehicl
 export const bestDealVehicles = Array.from({ length: 8 }, (_, i) => makeVehicle(i + 101));
 
 export const featuredDeal = makeVehicle(999);
+
+featuredDeal.image = "/assets/images/home/car.png";
+featuredDeal.title = "Honda Civic Type R - 2021";
+featuredDeal.subtitle = "Performance edition with premium features";
+featuredDeal.mileage = "12,500 Miles";
+featuredDeal.fuel = "Petrol";
+featuredDeal.transmission = "Automatic";
+featuredDeal.price = "LKR 12M";
+featuredDeal.discountPrice = "LKR 10.8M";

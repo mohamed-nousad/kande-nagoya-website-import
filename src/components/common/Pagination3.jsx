@@ -28,7 +28,7 @@ export default function Pagination({ page, limit, total = 0, onPageChange, onLim
   return (
     <div className="pagination-bar">
       <span className="pagination-info">
-        Showing {from}–{to} of {total} results
+        Showing {from}-{to} of {total} results
       </span>
 
       <div className="pagination-controls">

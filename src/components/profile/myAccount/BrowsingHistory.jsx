@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { ICONS } from "@/configs/assetPaths";
 import { useGetBrowsingHistoryQuery, useGetRecommendedQuery } from "@/store/api/webStockApi";
-import VehicleCard from "@/components/homes/home-11/VehicleCard";
+import VehicleCard from "@/components/home/VehicleCard";
 import Loading from "@/components/common/Loading";
 
 const BrowsingHistory = ({ defaultImage }) => {

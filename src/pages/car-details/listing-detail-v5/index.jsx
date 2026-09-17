@@ -1,5 +1,5 @@
 import CarDetails5 from "@/components/carDetails/CarDetails5";
-import Footer1 from "@/components/footers/Footer1";
+import Footer1 from "@/components/footer/Footer1";
 import Header2 from "@/components/headers/Header2";
 import React from "react";
 import { Link, useParams } from "react-router-dom";

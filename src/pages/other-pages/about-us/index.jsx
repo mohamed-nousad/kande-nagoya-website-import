@@ -1,6 +1,6 @@
 import Agents from "@/components/common/Agents";
 import Brands from "@/components/common/Brands";
-import Footer1 from "@/components/footers/Footer1";
+import Footer1 from "@/components/footer/Footer1";
 import RecomandedCars from "@/components/common/RecomandedCars";
 import Header2 from "@/components/headers/Header2";
 import Testimonials from "@/components/homes/home-10/Testimonials";

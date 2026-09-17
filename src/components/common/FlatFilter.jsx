@@ -186,17 +186,17 @@ export default function FlatFilter({
                     <div className="group-select tf-select">
                       <select className="nice-select">
                         <option>Driver type</option>
-                        <option value="4WD–Four-wheel-drive">
-                          4WD – Four-wheel drive
+                        <option value="4WD-Four-wheel-drive">
+                          4WD - Four-wheel drive
                         </option>
-                        <option value="AWD–All-wheel-drive">
-                          AWD – All-wheel drive
+                        <option value="AWD-All-wheel-drive">
+                          AWD - All-wheel drive
                         </option>
-                        <option value="FWD–Front-wheel-drive">
-                          FWD – Front-wheel drive
+                        <option value="FWD-Front-wheel-drive">
+                          FWD - Front-wheel drive
                         </option>
-                        <option value="RWD–Rear-wheel-drive">
-                          RWD – Rear-wheel drive
+                        <option value="RWD-Rear-wheel-drive">
+                          RWD - Rear-wheel drive
                         </option>
                       </select>
                     </div>

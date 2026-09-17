@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import { coverBannerData } from "../../data/coverBannerData";
-import { LeftArrowIcon, RightArrowIcon } from "../homes/home-11/Icon";
+import { LeftArrowIcon, RightArrowIcon } from "../home/Icon";
 
 const CoverBanners = () => {
   const sliderBanners = coverBannerData?.sliderBanners;
