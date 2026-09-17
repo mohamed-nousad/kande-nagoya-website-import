@@ -1,0 +1,241 @@
+.cs {
+  margin-top: 0;
+}
+
+.cs-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 21.83px;
+  margin-top:13.39px
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+  }
+
+  &__title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18.9px;
+    font-weight: 700;
+    color: #000;
+    white-space: nowrap;
+    letter-spacing: 0.05em;
+  }
+
+  &__gap {
+    flex: 1;
+    height: 0.787px;
+  }
+
+  &__loc-label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17.325px;
+    font-weight: 400;
+    color: #707070;
+    white-space: nowrap;
+  }
+
+  &__flag {
+    width: 22px;
+    height: 16px;
+    border-radius: 2px;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  &__city {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18.9px;
+    font-weight: 600;
+    color: #000;
+    white-space: nowrap;
+  }
+}
+
+.cs-summary {
+  display: flex;
+  margin-bottom: 24.19px;
+  overflow: hidden;
+
+  &__col {
+    flex: 1;
+    text-align: center;
+    padding: 10px 4px;
+    border-right: 0.787px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    gap: 5.29px;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  &__label {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14.175px;
+    font-weight: 400;
+    color: #707070;
+    line-height: 1.2;
+  }
+
+  &__val {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18.9px;
+    font-weight: 700;
+    color: #000;
+    line-height: 1.2;
+  }
+}
+
+.cs-table-wrap {
+  overflow-x: auto;
+  margin-bottom: 21.26px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.cs-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0.787px solid #f2f2f2;
+  min-width: 480px;
+
+  tr {
+    &:last-child td {
+      border-bottom: none;
+    }
+  }
+
+  td {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15.325px;
+    font-weight: 400;
+    color: #2e2e2e;
+    padding: 4px 12px;
+    border-bottom: 0.787px solid #eae8e8;
+    vertical-align: middle;
+    line-height: 1.45;
+  }
+
+  &__lb {
+    background: #f2f2f2;
+    width: 20%;
+  }
+
+  &__vl {
+    background: #fff;
+    width: 28%;
+
+    &--sep {
+      border-right: 0.787px solid #d0d0d0;
+    }
+  }
+}
+
+.cs-notes {
+  margin-top: 10px;
+
+  &__p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    color: #555;
+    line-height: 1.65;
+    margin-bottom: 12.6px;
+
+    &--bold {
+      font-weight: 700;
+      color: #000;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .cs-head {
+    gap: 6px;
+
+    &__title {
+      font-size: 13px;
+    }
+
+    &__loc-label {
+      font-size: 11px;
+    }
+
+    &__city {
+      font-size: 13px;
+    }
+  }
+
+  .cs-summary {
+    &__label {
+      font-size: 9px;
+    }
+
+    &__val {
+      font-size: 12px;
+    }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .cs-head {
+    flex-wrap: wrap;
+    gap: 5px;
+
+    &__line {
+      display: none;
+    }
+
+    &__title {
+      font-size: 12px;
+    }
+
+    &__loc-label {
+      font-size: 10px;
+    }
+
+    &__city {
+      font-size: 12px;
+    }
+
+    &__flag {
+      width: 18px;
+      height: 13px;
+    }
+  }
+
+  .cs-summary {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+
+    &__col {
+      min-width: 70px;
+      padding: 8px 4px;
+    }
+
+    &__label {
+      font-size: 9px;
+    }
+
+    &__val {
+      font-size: 11px;
+    }
+  }
+
+  .cs-notes {
+    &__p {
+      font-size: 10px;
+    }
+  }
+}

@@ -1,0 +1,292 @@
+.rsb {
+  width: 208px;
+  flex: 0 0 208px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+}
+
+// Satisfaction Rate
+.rsb-sat {
+  width: 100%;
+  position: relative;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.rsb-sat__img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+// Create Account
+.rsb-acc {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #0096DB;
+  border-radius: 6px;
+  text-align: center;
+  background: #fff;
+}
+
+.rsb-acc__head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  h4 {
+    margin: 0;
+    font-size: 17.3px;
+    color: #0096DB;
+  }
+
+  img {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.rsb-acc__sub {
+  margin: 6px 0 14px;
+  font-size: 9.5px;
+  color: #777;
+}
+
+.rsb-acc__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px 10px;
+  margin-bottom: 16px;
+}
+
+.rsb-acc__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+
+  font-size: 9.35px;
+  color: #333;
+
+  img {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.rsb-acc__btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 999px;
+  border: none;
+  background: #0096DB;
+  color: #fff;
+  font-weight: 400 !important;
+  cursor: pointer;
+}
+
+.rsb-local {
+  background: #fff;
+  border: 1px solid #eeeff3;
+  border-radius: 12px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.rsb-local__head {
+  background: #0096DB;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 12px 10px;
+
+  h4 {
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400 !important;
+  }
+}
+
+.rsb-local__list {
+  list-style: none;
+  margin: 0;
+  padding: 6px 12px;
+}
+
+.rsb-local__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 0;
+  border-bottom: 1px solid #f3f4f7;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.rsb-local__flag {
+  width: 26px;
+  height: 18px;
+ border-radius: 2px; 
+  overflow: hidden;
+  flex-shrink: 0;
+
+  .fi {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 2px; 
+  }
+}
+
+.rsb-local__name {
+  flex: 1;
+  font-size: 13px;
+  font-weight: 600;
+  color: #252936;
+}
+
+.rsb-local__more {
+  text-align: center;
+  padding: 12px;
+
+  font-size: 13px;
+  font-weight: 600;
+  color: #0096DB;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  border-top: 1px solid #f3f4f7;
+}
+
+.rsb-follow {
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px 0;
+
+  &__title {
+    font-size: 13px;
+    color: #151820;
+    margin: 0 0 12px;
+    font-weight: 500;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  &__icon {
+    display: flex;
+  }
+}
+.rsb-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.rsb-cta__card {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.rsb-cta__card--buy { background: #f9c6d2; }
+.rsb-cta__card--sell { background: #ffe9f3; }
+
+.rsb-cta__content {
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rsb-cta__icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.rsb-cta__content h5 {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16.154px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24.23px;
+  color: #050B20;
+}
+
+.rsb-cta__content p {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14.942px;
+  color: #050B20;
+}
+
+.rsb-cta__btn {
+  margin-top: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  padding: 2px 6.5px;
+  border-radius: 999px;
+  background: #fff;
+  color: #0096DB;
+  font-size: 11px;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid rgba(229, 1, 57, 0.23);
+
+ 
+  
+  &-icon {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #0096DB
+      url("/assets/images/right-sidebar/icon-svg/icon-arrow-up-right.svg")
+      no-repeat center;
+  }
+}
+
+@media (max-width: 991px) {
+  .rsb {
+    width: 100%;
+    max-width: 520px;
+    margin: 24px auto 0;
+    flex: none;
+    gap: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .rsb {
+    width: 100%;
+    max-width: none;
+    margin: 24px 0 0;
+    flex: none;
+    gap: 16px;
+  }
+}

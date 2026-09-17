@@ -1,0 +1,36 @@
+.not-found {
+  min-height: 70vh;
+  padding: 2.5rem 1.25rem;
+
+  &__code {
+    font-size: 6.875rem;
+    font-weight: 900;
+    color: #0096DB;
+    margin: 0;
+    line-height: 1;
+  }
+
+  &__title {
+    font-size: 2rem;
+    margin: 1.875rem 0;
+  }
+
+  &__text {
+    font-size: 1rem;
+    margin-bottom: 1.5625rem;
+  }
+
+  &__btn {
+    background: #0096DB;
+    color: #fff;
+    padding: 0.75rem 1.625rem;
+    border-radius: 1.875rem;
+    font-weight: 700;
+    text-decoration: none;
+
+    &:hover {
+      color: #fff;
+      background: #d90030;
+    }
+  }
+}

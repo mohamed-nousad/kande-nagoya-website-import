@@ -1,0 +1,2149 @@
+
+// stock filter section 
+
+.stock-filter-section {
+  margin-bottom: 20px;
+}
+
+.stock-breadcrumb {
+  color: #3b3737;
+  font-family: "DM Sans";
+  font-size: 13.781px;
+  font-weight: 400;
+  line-height: 26.334px;
+  margin-bottom: 6px;
+}
+
+.stock-page-title {
+  color: #3b3737;
+  font-family: "DM Sans";
+  font-size: 24.412px;
+  font-weight: 700;
+  line-height: 26.334px;
+  margin-bottom: 8.44px;
+}
+
+.stock-filter-container {
+ // width: 917px;
+
+  border: 1px solid #e5e5e5;
+  background: #fafcfd;
+
+  padding: 24px 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  gap: 64.32
+}
+
+.stock-filter-left {
+  width: 696px;
+  flex-shrink: 0;
+}
+
+.stock-filter-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 11.69px;
+
+  select,
+  input {
+    height: 28.469px;
+
+    border-radius: 3.795px;
+    border: 0.949px solid #e0e0e0;
+
+    background: #fff;
+
+    padding: 0 10px;
+
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 13.286px;
+    font-weight: 500;
+    line-height: 26.334px;
+  }
+
+  input::placeholder {
+    color: #c2bdbd;
+    font-family: "DM Sans";
+    font-size: 13.286px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26.334px;
+    opacity: 1;
+  }
+}
+
+.filter-wide {
+  width: 206.88px;
+}
+.stock-filter-row input.filter-wide {
+  width: 206.88px;
+  flex: 0 0 206.88px;
+}
+
+.filter-small {
+  width: 98.69px;
+}
+
+.stock-filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 12.337px;
+    font-weight: 500;
+    line-height: 26.334px;
+  }
+}
+
+.stock-filter-actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 15.04px;
+}
+
+.search-btn {
+  width: 143.297px;
+  height: 34.164px;
+
+  border: none;
+  border-radius: 95px;
+
+  background: #0096DB;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+    font-family: "DM Sans";
+  font-size: 14.235px;
+  font-weight: 500;
+  line-height: 26.334px;
+
+
+  cursor: pointer;
+}
+
+.reset-btn {
+  width: 143.297px;
+  height: 34.164px;
+
+  border-radius: 95px;
+  border: 1px solid #0096DB;
+  font-family: "DM Sans";
+  font-size: 14.235px;
+  font-weight: 500;
+  line-height: 26.334px;
+
+  background: #fff;
+  color: #0096DB;
+
+  cursor: pointer;
+}
+
+.stock-filter-assistant {
+  width: 150px;
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    margin-top: 10px;
+
+    color: #3b3737;
+    font-family: "DM Sans";
+    font-size: 9.85px;
+    font-weight: 300;
+    line-height: 15.5px;
+  }
+
+  h4 {
+    margin: 0;
+
+    color: #3b3737;
+    font-family: "DM Sans";
+    font-size: 14.37px;
+    font-weight: 700;
+    line-height: 15.5px;
+  }
+}
+
+.stock-filter-mic-circle {
+  width: 106.85px;
+  height: 106.85px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 186, 186, 0.08);
+
+  box-shadow:
+    0 0 0 1.58px rgba(229, 1, 57, 0.15),
+    0 0.791px 4.98px rgba(229, 1, 57, 0.89);
+}
+
+// filter tablet responsive 
+@media (max-width: 1024px) {
+  .stock-filter-container {
+    width: 100%;
+    padding: 24px;
+    gap: 24px;
+    flex-direction: column;
+  }
+
+  .stock-filter-left {
+    width: 100%;
+  }
+
+  .stock-filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+
+  .filter-wide,
+  .stock-filter-row input.filter-wide {
+    flex: 1 1 calc(50% - 5px);
+    width: auto;
+  }
+
+  .filter-small {
+    flex: 1 1 calc(25% - 8px);
+    width: auto;
+  }
+
+  .stock-filter-row select,
+  .stock-filter-row input {
+    min-width: 0;
+  }
+
+  .stock-filter-assistant {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 12px;
+  }
+
+  .stock-filter-mic-circle {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+// filter mobile responsive 
+@media (max-width: 767px) {
+  .stock-filter-container {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 24px;
+  }
+
+  .stock-filter-left {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .stock-filter-row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .filter-wide,
+  .filter-small,
+  .stock-filter-row input.filter-wide {
+    width: 100%;
+    flex: none;
+  }
+
+  .stock-filter-row select,
+  .stock-filter-row input {
+    width: 100%;
+    height: 44px;
+    box-sizing: border-box;
+  }
+
+  .stock-filter-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+ .stock-filter-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.search-btn,
+.reset-btn {
+  flex: 1;
+  width: auto;
+  height: 44px;
+}
+
+  .stock-filter-assistant {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    order: 2;
+  }
+
+  .stock-filter-mic-circle {
+    width: 72px;
+    height: 72px;
+
+    margin: 0 auto 12px;
+  }
+
+  .stock-filter-assistant span,
+  .stock-filter-assistant h4 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .stock-filter-assistant span {
+    margin: 0 0 4px;
+  }
+
+  .stock-filter-assistant h4 {
+    margin: 0;
+    font-size: 16px;
+  }
+}
+
+
+
+// price calculaor 
+.price-calculator-section {
+  width: 917.437px;
+  min-height: 129.937px;
+
+  border: 0.787px solid #e0e0e0;
+  background: #fff;
+
+  padding: 16px 20px;
+  margin-bottom: 22.05px;
+}
+
+.price-calculator-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.price-calculator-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.price-calculator-title {
+  margin: 0;
+
+  color: #000;
+
+  font-family: Poppins;
+  font-size: 14.175px;
+  font-weight: 600;
+  line-height: 26.334px;
+}
+
+.price-calculator-icon {
+  width: 15.75px;
+  height: 15.75px;
+  flex-shrink: 0;
+  display: block;
+  object-fit: contain;
+}
+
+.price-calculator-subtitle {
+  margin: 0;
+
+  color: #000;
+
+  font-family: Poppins;
+  font-size: 11.025px;
+  font-weight: 400;
+  line-height: 26.334px;
+}
+
+.price-calculator-content {
+  display: flex;
+  align-items: flex-start;
+   gap: 42px;
+  
+}
+
+.price-calculator-left {
+  width: 380px;
+   margin-right: 40px;
+}
+
+.price-calculator-selects {
+  display: flex;
+  gap:3.94px;
+  margin-bottom: 8px;
+
+  select {
+    width: 173.25px;
+    height: 29.925px;
+
+    border-radius: 3.796px;
+    border: 0.949px solid #e0e0e0;
+
+    padding: 0 10px;
+
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 13.286px;
+    font-weight: 500;
+    line-height: 26.334px;
+  }
+}
+
+.shipping-method {
+  display: flex;
+  align-items: center;
+   gap: 17.04px;
+
+  span,
+  label {
+    color: #000;
+
+    font-family: Poppins;
+    font-size: 9.45px;
+    font-weight: 500;
+    line-height: 26.334px;
+  }
+}
+
+.price-calculator-center {
+  width: 250px;
+
+  display: flex;
+  flex-direction: column;
+  margin-left: -160px;
+}
+
+.calculator-option-row {
+  display: grid;
+  grid-template-columns: 180px 50px 50px;
+   margin-bottom: 0.15px;
+
+  align-items: center;
+}
+
+.calculator-option-row > span {
+  width: 170px;
+  text-align: right;
+  white-space: nowrap;
+
+  color: #000;
+  font-family: Poppins;
+  font-size: 9.45px;
+  font-weight: 500;
+  line-height: 26.334px;
+}
+
+.shipping-method label,
+.calculator-option-row label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  color: #000;
+  font-family: Poppins;
+  font-size: 9.45px;
+  font-weight: 500;
+  line-height: 26.334px;
+}
+
+.price-calculator-actions {
+  display: flex;
+   gap: 7.06px;
+  align-self: center;
+}
+
+.calculate-btn {
+  width: 129.412px;
+  height: 32.287px;
+
+  border: none;
+  border-radius: 95px;
+
+  background: #0096DB;
+
+  color: #fff;
+  text-align: center;
+
+    font-family: "DM Sans";
+  font-size: 14.235px;
+  font-weight: 500;
+  line-height: 22.148px;
+  cursor: pointer;
+}
+
+.calculator-reset-btn {
+  width: 129.412px;
+  height: 32.287px;
+
+  border-radius: 95px;
+  border: 0.949px solid #0096DB;
+
+  background: #fff;
+
+  color: #0096DB;
+  text-align: center;
+
+   font-family: "DM Sans";
+  font-size: 14.235px;
+  font-weight: 500;
+  line-height: 22.148px;
+
+  cursor: pointer;
+}
+
+.custom-radio {
+  display: flex;
+  align-items: center;
+ gap: 3.94px;
+  cursor: pointer;
+}
+
+.custom-radio input {
+  display: none;
+}
+
+.radio-circle {
+  width: 9.45px;
+  height: 9.45px;
+
+  border: 0.59px solid #000;
+  border-radius: 50%;
+
+  position: relative;
+}
+
+.custom-radio input:checked + .radio-circle::after {
+  content: "";
+
+  position: absolute;
+
+  width: 6.3px;
+  height: 6.3px;
+
+  border-radius: 50%;
+
+  background: #0096DB;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+// price calculator mobile responsive
+@media (max-width: 767px) {
+  .price-calculator-section {
+    width: 100%;
+    min-height: auto;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  .price-calculator-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+
+  .price-calculator-title {
+    font-size: 18px;
+  }
+
+  .price-calculator-subtitle {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .price-calculator-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .price-calculator-left,
+  .price-calculator-center,
+  .price-calculator-actions {
+    width: 100%;
+    margin: 0;
+  }
+
+  .price-calculator-selects {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .price-calculator-selects select {
+    width: 100%;
+    height: 44px;
+  }
+
+  .shipping-method {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .calculator-option-row {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  .calculator-option-row > span {
+    width: auto;
+    text-align: left;
+    white-space: normal;
+  }
+
+  .price-calculator-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 8px;
+  }
+
+  .calculate-btn,
+  .calculator-reset-btn {
+    flex: 1;
+    width: auto;
+    height: 44px;
+  }
+}
+// price calculator tablet responsive 
+@media (max-width: 1024px) {
+  .price-calculator-section {
+    width: 100%;
+    min-height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .price-calculator-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .price-calculator-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .price-calculator-left,
+  .price-calculator-center,
+  .price-calculator-actions {
+    width: 100%;
+    margin: 0;
+  }
+
+  .price-calculator-selects {
+    display: flex;
+    gap: 12px;
+  }
+
+  .price-calculator-selects select {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .calculator-option-row {
+    display: grid;
+    grid-template-columns: 1fr 70px 70px;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .calculator-option-row > span {
+    width: auto;
+    text-align: left;
+  }
+
+ .price-calculator-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+  .calculate-btn,
+  .calculator-reset-btn {
+    width: 180px;
+  }
+}
+
+
+
+//search hero
+.stock-results-bar {
+  width: 913.5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 8px;
+}
+
+.stock-results-left {
+  display: flex;
+  align-items: center;
+  gap: 14.96px;
+}
+
+.results-count {
+  color: #000;
+  font-family: Poppins;
+  font-size: 11.812px;
+  font-weight: 500;
+  line-height: 26.334px;
+}
+
+.results-rating {
+  display: flex;
+  align-items: center;
+   gap: 3.94px;
+}
+
+.rating-value {
+  margin-left: 5.51px;
+
+  color: #000;
+  font-family: Poppins;
+  font-size: 15.75px;
+  font-weight: 700;
+  line-height: 26.334px;
+}
+
+.reviews-link {
+ margin-left: 22.05px;
+
+  color: #5e82f6;
+
+  font-family: Poppins;
+  font-size: 11.812px;
+  font-weight: 500;
+  line-height: 26.334px;
+
+  text-decoration: underline;
+}
+
+.stock-results-sort {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+
+  color: #000;
+
+  font-family: "DM Sans";
+  font-size: 11.812px;
+  font-weight: 500;
+  line-height: 26.334px;
+
+  cursor: pointer;
+}
+
+.stock-results-divider {
+  width: 913.5px;
+  border-bottom: 0.787px solid #e0e0e0;
+  margin-bottom: 24px;
+}
+
+.stock-results-sort-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 12px;
+}
+
+.stock-sort-line {
+  width: 196px;
+  height: 1.575px;
+  background: #3b3737;
+
+  margin-top: 8px;
+  margin-left: 0;
+}
+
+.results-rating svg {
+  width: 14.175px;
+  height: 14.175px;
+}
+
+
+// hero tablet responsive
+@media (max-width: 1024px) {
+  .stock-results-bar,
+  .stock-results-divider {
+    width: 100%;
+  }
+
+  .stock-results-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .stock-results-left {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .stock-results-sort-wrapper {
+    width: 100%;
+  }
+
+  .stock-results-sort {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 12px 0;
+
+    font-size: 14px;
+  }
+
+  .stock-sort-line {
+    width: 100%;
+  }
+}
+// hero mobile responsive 
+@media (max-width: 767px) {
+  .stock-results-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .stock-results-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .results-count {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .results-rating {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .rating-value {
+    font-size: 16px;
+    margin-left: 0;
+  }
+
+  .reviews-link {
+    margin-left: 0;
+    font-size: 13px;
+  }
+
+  .stock-results-sort-wrapper {
+    width: 100%;
+  }
+
+  .stock-results-sort {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 12px 0;
+
+    font-size: 14px;
+  }
+
+  .stock-sort-line {
+    width: 100%;
+  }
+}
+
+
+
+//stoke vehicl card 
+.stock-vehicle-list {
+  width: 917px;
+  text-align: center;
+}
+
+.stock-vehicle-item {
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+
+  border-bottom: 0.787px solid #e0e0e0;
+}
+
+.stock-vehicle-item:last-child {
+  margin-bottom: 0;
+}
+
+.stock-vehicle-card {
+  display: grid;
+  grid-template-columns: 208px 490px 194px;
+  gap: 10px;
+   align-items: start;
+}
+.stock-card-content {
+   width: 552px;
+  min-width: 552px;
+ position: relative;
+  top: -6px;
+  
+}
+.stock-card-image-wrapper {
+  width: 185.062px;
+  height: 138.33px;
+
+  position: relative;
+
+  border: 0.787px solid #e0e0e0;
+}
+
+.stock-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.stock-card-badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+
+  width: 54.33px;
+  height: 14.17px;
+
+  border-radius: 18.97px;
+
+  background: #405ff2;
+
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 6.3px;
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stock-card-favorite {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 16.135px;
+  height: 16.135px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  cursor: pointer;
+}
+
+.stock-card-favorite svg {
+  width: 5.378px;
+  height: 5.378px;
+}
+
+.stock-card-kan-no {
+  width: 185.06px;
+  height: 19.68px;
+
+  margin-top: 6.57px;
+
+  border-radius: 15.75px;
+
+  background: #d9d9d9;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #000;
+  font-family: Poppins;
+  font-size: 9.45px;
+  font-weight: 500;
+  line-height:26.334px;
+}
+
+.stock-card-title {
+  color: #000;
+  font-family: Poppins;
+  font-size: 15.75px;
+  font-weight: 600;
+  line-height: 26.334px;
+
+  margin-bottom: 1px;
+}
+
+.stock-card-specs-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; 
+}
+
+.stock-card-spec-item {
+  min-height: 40.162px; 
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 14px;
+
+  border-right: 0.787px solid #E0E0E0;
+}
+
+.stock-card-spec-item:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.stock-card-specs-top span {
+  display: block;
+
+  color: #706b66;
+  text-align: center;
+
+  font-family: Poppins;
+  font-size: 11.025px;
+  font-weight: 500;
+  line-height: 25.334px;
+}
+
+.stock-card-specs-top strong {
+  color: #050b20;
+
+  font-family: Poppins;
+  font-size: 14.175px;
+  font-weight: 500;
+  line-height:25.334px;
+}
+
+.stock-card-table {
+  display: grid;
+  width: fit-content;
+
+  grid-template-columns:
+    75px
+    99px
+    55px
+    60px
+    60px
+    60px
+    40.525px
+    40.95px;
+
+  border-top: 0.787px solid #e0e0e0;
+  border-left: 0.787px solid #e0e0e0;
+
+  margin-bottom: 10px;
+}
+
+.stock-card-table div {
+  height: 31px;
+
+  border-right: 0.787px solid #e0e0e0;
+  border-bottom: 0.787px solid #e0e0e0;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 10px;
+  padding-right: 10px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  text-overflow: unset;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  font-family: "Poppins";
+  font-size: 9.45px;
+  font-weight: 500;
+  color: #3B3737;
+  line-height:26.334px;
+}
+
+.stock-card-table div::-webkit-scrollbar {
+  display: none;
+}
+.stock-card-table div:nth-child(odd) {
+  background: #f2f2f2;
+}
+
+.stock-card-table div:nth-child(even) {
+  background: #ffffff;
+}
+.stock-card-features {
+  color: #333;
+  font-family: Poppins;
+  font-size: 11.812px;
+  font-weight: 500;
+  line-height:26.334px;
+}
+
+.stock-card-features a {
+  color: #5e82f6;
+}
+.stock-location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.stock-location-flag {
+  width: 24px;
+  height: 19px;
+  flex-shrink: 0;
+  display: block;
+}
+
+.stock-card-table-wrapper {
+  width: 100%;
+}
+
+.price-label {
+  color: #706b66;
+  text-align: center;
+
+  font-family: Poppins;
+  font-size: 11.025px;
+  font-weight:500;
+line-height:26.334px;
+}
+.stock-card-price-column {
+  width: 194px;
+  min-width: 194px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding-top: 6px;
+}
+
+.stock-card-price-column h3 {
+  color: #050b20;
+  text-align: center;
+
+  font-family: Poppins;
+  font-size: 19.687px;
+  font-weight: 700;
+
+  margin: 0;
+  line-height:26.334px;
+}
+
+.discount-row {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+
+  color: #706b66;
+
+  font-family: Poppins;
+  font-size: 11.812px;
+}
+
+.price-row,
+.total-row {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.price-row {
+  margin-bottom: 14px;
+}
+
+.total-row {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+
+  margin-bottom: 2px;
+}
+
+
+
+.price-left,
+.total-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.price-right,
+.total-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.total-price-label {
+  display: block;
+  margin-top: 0;
+   grid-column: 1;
+  grid-row: 1;
+
+  margin-top: 0;
+
+  color: #706b66;
+  text-align: center;
+
+   font-size:11.812px;
+  font-weight:500;
+  line-height:26.334px;
+}
+
+.stock-card-price-column small {
+  display: block;
+
+  margin-top: 0px;
+
+  color: #706b66;
+  text-align: center;
+
+  font-size: 9.45px;
+  font-weight:400;
+line-height:26.334px;
+}
+
+.stock-card-price-column h4 {
+  color: #050b20;
+  text-align: center;
+
+  font-family: "Poppins";
+  font-size: 17.325px;
+  font-weight: 400;
+
+  margin: 0;
+  line-height:26.334px;
+}
+
+
+.roro-text {
+  display: block;
+
+  color: #706b66;
+  text-align: center;
+
+  font-size: 11.812px;
+  font-weight:400;
+line-height:26.334px;
+
+
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.inquiry-btn {
+  width: 193.72px;
+  height: 33.86px;
+
+  border: none;
+  border-radius: 94.89px;
+
+  background: #0096DB;
+
+  color: #fff;
+
+  font-family: Poppins;
+  font-size: 14.235px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.inquiry-btn-icon {
+  width: 15.59px;
+  height: 12.25px;
+  flex-shrink: 0;
+  display: block;
+}
+
+.stock-vehicle-item {
+  width: 913.5px;
+  padding-bottom: 14px;
+  border-bottom: 0.787px solid #e0e0e0;
+}
+
+.stock-pagination-wrapper {
+  width: 913.5px;
+
+  border-top: 0.787px solid #e0e0e0;
+  border-bottom: 0.787px solid #e0e0e0;
+
+   height: 30px;    
+  display: flex;
+  align-items: center;
+}
+
+
+.stock-pagination {
+  display: flex;
+  align-items: center;
+  margin-left: 24.32px;
+  gap: 4px;
+}
+
+.stock-pagination__item {
+  width: 17.52px;
+  height: 17.52px;
+
+  border: 0.79px solid #0096DB;
+  border-radius: 50%;
+
+  background: #fff;
+
+  color: #000;
+  font-family: Poppins;
+  font-size: 7.875px;
+  font-weight: 500;
+  line-height: 19.312px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+}
+
+.stock-pagination__item--active {
+  background: #0096DB;
+  color: #fff;
+}
+
+.stock-pagination__dots {
+  width: 18.9px;
+
+  text-align: center;
+
+  color: #000;
+  font-family: Poppins;
+  font-size: 7.875px;
+  font-weight: 500;
+  line-height: 19.312px;
+}
+
+.stock-pagination__next {
+  width: 38.587px;
+  height: 17.325px;
+
+  padding: 1.575px 2.716px 1.575px 3.147px;
+
+  border: 0.787px solid #0096DB;
+  border-radius: 49.171px;
+
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: #0096DB;
+  font-family: "DM Sans";
+  font-size: 7.376px;
+  font-weight: 500;
+   line-height: 13.645px;
+}
+
+.stock-pagination__next-circle {
+  width: 12.293px;
+  height: 12.293px;
+
+  border-radius: 50%;
+
+  background: #0096DB;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 7px;
+}
+
+
+//stock vehicle card tablet responsive 
+ 
+@media (max-width: 1024px) {
+  .stock-vehicle-list,
+  .stock-vehicle-item,
+  .stock-pagination-wrapper {
+    width: 100%;
+  }
+
+  .stock-vehicle-card {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-areas:
+      "image content"
+      "price price";
+    gap: 20px;
+  }
+
+  .stock-card-image-column {
+    grid-area: image;
+  }
+
+  .stock-card-content {
+    grid-area: content;
+
+    width: auto;
+    min-width: 0;
+    max-width: 100%;
+
+    position: static;
+  }
+
+ .stock-card-specs-top {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 0;
+   display: none !important;
+}
+
+.stock-card-specs-top::-webkit-scrollbar {
+  display: none;
+}
+
+.stock-card-spec-item {
+  flex: 0 0 auto;
+}
+
+.stock-card-table-wrapper {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  -webkit-overflow-scrolling: touch;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+  .stock-card-table-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .stock-card-table {
+  width: fit-content;
+  min-width: 560px;
+  margin: 0 auto;
+}
+
+  .stock-card-price-column {
+    grid-area: price;
+
+    width: 100%;
+    min-width: 0;
+
+    margin-top: 0;
+    padding-top: 20px;
+
+    border-top: 1px solid #e0e0e0;
+  }
+
+  .price-row,
+  .total-row {
+    width: 100%;
+    max-width: 420px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .inquiry-btn {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+   .stock-vehicle-list {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .stock-vehicle-scroll {
+    display: flex;
+    flex-wrap: nowrap;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    gap: 16px;
+
+    -webkit-overflow-scrolling: touch;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .stock-vehicle-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .stock-vehicle-item {
+    flex: 0 0 100%;
+    min-width: 100%;
+    width: 100%;
+  }
+}
+
+//stock vehicle card mobile responsive 
+
+@media (max-width: 767px) {
+  .stock-vehicle-list,
+  .stock-vehicle-item,
+  .stock-pagination-wrapper {
+    width: 100%;
+  }
+
+  .stock-vehicle-item {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+
+  .stock-vehicle-card {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+/* IMAGE */
+
+.stock-card-image-column {
+  width: 100%;
+}
+
+.stock-card-image-wrapper {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.stock-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.stock-card-kan-no {
+  width: 100%;
+}
+
+  /* CONTENT */
+
+  .stock-card-content {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+
+    position: static;
+    top: auto;
+  }
+
+  .stock-card-title {
+    font-size: 20px;
+    line-height: 1.35;
+    margin-bottom: 16px;
+  }
+
+  /* SPECS */
+
+  .stock-card-specs-top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+
+    margin-bottom: 16px;
+     display: none !important;
+  }
+
+  .stock-card-specs-top span {
+    text-align: left;
+  }
+
+  .stock-card-specs-top strong {
+    display: block;
+    text-align: left;
+  }
+
+  .stock-location {
+    grid-column: span 2;
+  }
+
+  /* TABLE */
+
+  .stock-card-table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    -webkit-overflow-scrolling: touch;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .stock-card-table-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .stock-card-table {
+    width: max-content;
+    min-width: 560px;
+  }
+
+  /* FEATURES */
+
+  .stock-card-features {
+    margin-top: 12px;
+    line-height: 1.6;
+    font-size: 13px;
+  }
+
+  /* PRICE */
+
+  .stock-card-price-column {
+    width: 100%;
+    min-width: 0;
+
+    border-top: 1px solid #e0e0e0;
+
+    padding-top: 20px;
+    margin-top: 4px;
+
+    align-items: center;
+  }
+
+  .price-row,
+  .total-row {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .stock-card-price-column h3 {
+    font-size: 26px;
+  }
+
+  .stock-card-price-column h4 {
+    font-size: 22px;
+  }
+
+  /* BUTTON */
+
+  .inquiry-btn {
+    width: 100%;
+    max-width: 320px;
+    height: 48px;
+    margin-top: 12px;
+  }
+
+  /* PAGINATION */
+
+  .stock-pagination {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
+// recomended vehilce 
+.stock-recommended {
+  width: 934.705px;
+  margin-top: 40px;
+  margin-bottom: 46.42px;
+}
+
+.stock-recommended {
+  .vehicle-card__favorite {
+    top: 6px;
+    right: 15px;
+  }
+}
+
+.stock-recommended__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15.52px;
+}
+
+.stock-recommended__title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  h2 {
+    margin: 0;
+    color: #3b3737;
+    font-family: Poppins;
+    font-size: 18.98px;
+    font-weight: 700;
+    line-height: 26.334px;
+  }
+}
+
+.stock-recommended__icon {
+  width: 25.587px;
+  height: 25.587px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0096DB;
+  color: #fff;
+  font-size: 12px;
+}
+
+.stock-recommended__grid {
+  width: 917px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 16px;
+  row-gap: 22px;
+}
+
+.stock-recommended__icon-image {
+  width: 14.175px;
+  height: 14.175px;
+  display: block;
+  object-fit: contain;
+}
+
+
+// car details
+
+.cd6-recommended {
+  .stock-recommended__grid {
+    column-gap: 16px;
+    row-gap: 20px;
+  }
+}
+
+// recommended - tablet responsive
+
+@media (max-width: 1024px) {
+  .stock-recommended {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  .stock-recommended__grid {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .stock-recommended__grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .stock-recommended__grid .vehicle-card {
+    flex-shrink: 0;
+    width: 200px;
+  }
+}
+
+
+// recommended - mobile responsive
+
+@media (max-width: 767px) {
+  .stock-recommended {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  .stock-recommended__grid {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .stock-recommended__grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .stock-recommended__grid .vehicle-card {
+    flex-shrink: 0;
+    width: 200px;
+  }
+}
+
+// exlpore 
+.explore-toyota-models {
+  width: 934.705px;
+  margin-top: 46.46px;
+}
+
+.explore-toyota-models__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12.02px;
+
+  h2 {
+    margin: 0;
+
+    color: #050b20;
+    font-family: "Poppins";
+    font-size: 15.75px;
+    font-weight: 700;
+    line-height: 26.706px;
+  }
+}
+
+.explore-toyota-models__section {
+  margin-bottom: 39.65px;
+
+  h3 {
+    margin: 0 0 5.65px;
+
+    color: #050b20;
+    font-family: "DM Sans";
+    font-size: 10.682px;
+    font-weight: 500;
+    line-height: 19.762px;
+  }
+}
+
+.explore-toyota-models__line {
+  width: 146.5px;
+  height: 1px;
+  background: #0096DB;
+   margin-bottom: 23.59px;
+}
+
+.explore-toyota-models__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 42px;
+  row-gap: 10px;
+}
+
+.explore-toyota-models__grid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.explore-toyota-models__link {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 10.015px;
+  font-weight: 400;
+  line-height: 18.527px;
+  text-decoration: none;
+
+  &:hover {
+    color: #0096DB;
+  }
+}
+
+//explore toyota models - tablet 
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .explore-toyota-models {
+    width: 100%;
+    padding: 0 24px;
+    box-sizing: border-box;
+  }
+
+  .explore-toyota-models__header {
+    margin-bottom: 20px;
+  }
+
+  .explore-toyota-models__scroll-wrapper {
+    overflow-x: auto;
+
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .explore-toyota-models__scroll-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .explore-toyota-models__section {
+    min-width: 917px;
+  }
+
+  .explore-toyota-models__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    column-gap: 40px;
+    row-gap: 10px;
+  }
+
+  .explore-toyota-models__link {
+    display: flex;
+    align-items: center;
+
+    min-height: 40px;
+
+    font-size: 13px;
+
+    border-bottom: 1px solid #f2f2f2;
+  }
+}
+
+// explore toyota models - mobile 
+
+@media (max-width: 767px) {
+
+  .explore-toyota-models {
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+
+    margin-top: 32px;
+  }
+
+  .explore-toyota-models__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .explore-toyota-models__header h2 {
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 28px;
+
+    white-space: nowrap;
+  }
+
+  .explore-toyota-models__scroll-wrapper {
+    overflow-x: auto;
+
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .explore-toyota-models__scroll-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .explore-toyota-models__section {
+    min-width: 917px;
+  }
+
+  .explore-toyota-models__section {
+    margin-bottom: 28px;
+  }
+
+  .explore-toyota-models__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    column-gap: 40px;
+    row-gap: 10px;
+  }
+
+  .explore-toyota-models__grid > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .explore-toyota-models__link {
+    display: block;
+
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .explore-toyota-models__section h3 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .explore-toyota-models__line {
+    width: 120px;
+  }
+}
+
+.stock-list-page {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+
+  padding: 9.45px 66px 0;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: 185.938px 917px 208px;
+  column-gap: 34px;
+  align-items: start;
+}
+
+.stock-list-main {
+  width: 917px;
+  min-width: 917px;
+}
+
+.stock-list-right-sidebar {
+    width:280px;
+    flex:0 0 208px;
+    
+}
+
+// stock list page tablet responsive
+@media (min-width: 768px) and (max-width: 991px) {
+  .stock-list-page {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 24px;
+    gap: 24px;
+  }
+
+  .stock-list-main,
+  .stock-list-right-sidebar {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+  }
+}
+
+
+
+// stock list page mobile responsive
+@media (max-width: 767px) {
+  .stock-list-page {
+    display: flex;
+    flex-direction: column;
+
+    padding: 16px;
+    gap: 20px;
+  }
+
+  .stock-list-main,
+  .stock-list-right-sidebar {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+  }
+}
+
+
+
+
+
+
+

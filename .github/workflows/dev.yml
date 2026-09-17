@@ -1,0 +1,40 @@
+name: Kande Web JP Dev Deploy
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  build-and-deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Sync Files to Dev Directory
+        run: |
+          sudo mkdir -p /opt/amuryx/kande-web-jp-dev
+          sudo rsync -a --delete --exclude='.git' ./ /opt/amuryx/kande-web-jp-dev/
+          sudo chown -R $USER:$USER /opt/amuryx/kande-web-jp-dev
+
+      - name: Build Images
+        run: |
+          cd /opt/amuryx/kande-web-jp-dev
+          docker compose -f docker-compose.dev.yml build
+
+      - name: Zero-Downtime Restart
+        run: |
+          cd /opt/amuryx/kande-web-jp-dev
+          docker compose -f docker-compose.dev.yml up -d --remove-orphans
+
+      - name: Post-Deploy Cleanup
+        run: |
+          docker image prune -f
+
+      - name: Status Check
+        run: |
+          docker ps --filter "name=amuryx_kande_web_jp_dev" --format "table {{.Names}}\t{{.Status}}"
+          docker ps --format '{{.Names}}' | grep -q "^amuryx_kande_web_jp_dev$" \
+            || { echo "Missing container: amuryx_kande_web_jp_dev"; exit 1; }

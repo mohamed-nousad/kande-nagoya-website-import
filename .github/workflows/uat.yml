@@ -1,0 +1,40 @@
+name: Kande Web JP UAT Deploy
+
+on:
+  push:
+    branches:
+      - release
+
+jobs:
+  build-and-deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Sync Files to UAT Directory
+        run: |
+          sudo mkdir -p /opt/amuryx/kande-web-jp-uat
+          sudo rsync -a --delete --exclude='.git' ./ /opt/amuryx/kande-web-jp-uat/
+          sudo chown -R $USER:$USER /opt/amuryx/kande-web-jp-uat
+
+      - name: Build Images
+        run: |
+          cd /opt/amuryx/kande-web-jp-uat
+          docker compose -f docker-compose.uat.yml build
+
+      - name: Zero-Downtime Restart
+        run: |
+          cd /opt/amuryx/kande-web-jp-uat
+          docker compose -f docker-compose.uat.yml up -d --remove-orphans
+
+      - name: Post-Deploy Cleanup
+        run: |
+          docker image prune -f
+
+      - name: Status Check
+        run: |
+          docker ps --filter "name=amuryx_kande_web_jp_uat" --format "table {{.Names}}\t{{.Status}}"
+          docker ps --format '{{.Names}}' | grep -q "^amuryx_kande_web_jp_uat$" \
+            || { echo "Missing container: amuryx_kande_web_jp_uat"; exit 1; }
