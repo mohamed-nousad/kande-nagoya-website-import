@@ -15,7 +15,7 @@ export default function SiteHeader({ solid = false }) {
     <header className={`site-header${solid ? " site-header--solid" : ""}`}>
       <div className="header-inner">
         <NavLink className="brand" to="/">
-          <img src="/assets/images/home/logo.png" alt="Wheels Lanka Trading" />
+          <img src="/assets/images/logo/logo.png" alt="Wheels Lanka Trading" />
         </NavLink>
         <nav className="main-nav">
           {NAV.map((item) => (
