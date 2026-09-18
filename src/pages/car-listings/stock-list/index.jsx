@@ -5,6 +5,9 @@ import SiteHeader from "@/components/home/sections/SiteHeader";
 import VehicleCard from "@/components/home/VehicleCard";
 import { bestDealVehicles } from "@/data/homeShowcaseData";
 import Footer1 from "@/components/footer/Footer1";
+import CompareSection from "@/components/home/sections/CompareSection";
+import TestimonialsSection from "@/components/home/sections/TestimonialsSection";
+import FaqSection from "@/components/home/sections/FaqSection";
 
 const metadata = {
   title: "Vehicle Listing | Wheels Lanka Trading",
@@ -31,52 +34,30 @@ export default function StockListPage() {
       <div className="kande-home">
         <SiteHeader solid />
 
+        <section className="listing-hero"><div className="container-wide"><h1>Listings List</h1><p>Home <span>›</span> Used cars for sale</p></div></section>
         <section className="listing-page">
-          <div className="container-wide">
-            <div className="listing-head">
-              <div>
-                <h1>Vehicle Listing</h1>
-                <p>Explore our full stock of quality vehicles ready for you.</p>
-              </div>
-              <Link className="listing-back" to="/">Back to Home</Link>
-            </div>
-
-            <div className="listing-toolbar">
-              <label className="listing-field">
-                <span>Brand</span>
-                <select value={filters.brand} onChange={(e) => setField("brand", e.target.value)}>
-                  {BRANDS.map((b) => <option key={b}>{b}</option>)}
-                </select>
-              </label>
-              <label className="listing-field">
-                <span>Body Type</span>
-                <select value={filters.type} onChange={(e) => setField("type", e.target.value)}>
-                  {TYPES.map((t) => <option key={t}>{t}</option>)}
-                </select>
-              </label>
-              <label className="listing-field">
-                <span>Fuel</span>
-                <select value={filters.fuel} onChange={(e) => setField("fuel", e.target.value)}>
-                  {FUELS.map((f) => <option key={f}>{f}</option>)}
-                </select>
-              </label>
-              <label className="listing-field">
-                <span>Sort By</span>
-                <select value={filters.sort} onChange={(e) => setField("sort", e.target.value)}>
-                  {SORTS.map((s) => <option key={s}>{s}</option>)}
-                </select>
-              </label>
-            </div>
-
-            <div className="listing-count">{bestDealVehicles.length} vehicles found</div>
-
-            <div className="listing-grid">
-              {bestDealVehicles.map((v) => (
-                <VehicleCard key={v.id} vehicle={v} badgeText="In Stock" />
-              ))}
+          <div className="container-wide listing-layout">
+            <aside className="listing-sidebar">
+              <div className="listing-sidebar__title"><strong>Filters and Sort</strong><button type="button">× Clear</button></div>
+              <label>Make<select value={filters.brand} onChange={(e) => setField("brand", e.target.value)}>{BRANDS.map((b) => <option key={b}>{b}</option>)}</select></label>
+              <label>Model<select><option>Select Model</option><option>Ford Transit</option></select></label>
+              <div className="listing-price"><span>Price</span><div><input placeholder="Min" /><b>-</b><input placeholder="Max" /></div></div>
+              <label>Fuel Type<select value={filters.fuel} onChange={(e) => setField("fuel", e.target.value)}>{FUELS.map((f) => <option key={f}>{f}</option>)}</select></label>
+              <label>Transmission<select><option>Select Transmission</option><option>Automatic</option><option>Manual</option></select></label>
+              <label>Drive Type<select><option>Select Drive Type</option><option>Right Hand</option></select></label>
+              <label>Color<select><option>Select Color</option><option>White</option><option>Black</option></select></label>
+              <div className="listing-range"><span>0 km - 800,000 km</span><div /></div>
+              <label>Condition<select><option>Select Condition</option><option>New</option><option>Used</option></select></label>
+              <label>Featured<select><option>Select Featured</option><option>Featured</option></select></label>
+            </aside>
+            <div className="listing-results">
+              <div className="listing-results__head"><h2>Listing</h2><div><span>There Are Currently 17 Results</span><button className="view-toggle">▦</button><button className="view-toggle">☷</button><select><option>Show: 50</option></select><select value={filters.sort} onChange={(e) => setField("sort", e.target.value)}>{SORTS.map((s) => <option key={s}>{s}</option>)}</select></div></div>
+              <div className="listing-grid">{bestDealVehicles.concat(bestDealVehicles).map((v, index) => <VehicleCard key={`${v.id}-${index}`} vehicle={v} badgeText="Great Price" />)}</div>
+              <div className="listing-pagination"><button>‹</button><button className="active">1</button><button>2</button><button>3</button><button>4</button><button>5</button><span>...</span><button>79</button><button>80</button><button>›</button></div>
             </div>
           </div>
         </section>
+        <CompareSection /><TestimonialsSection /><FaqSection />
 
         <Footer1 />
       </div>
