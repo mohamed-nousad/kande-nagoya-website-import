@@ -21,6 +21,386 @@
   }
 }
 
+/* ---- Figma collection and deal sections ---- */
+.kande-home .collection-section {
+  padding: 95px 0 71px;
+}
+
+.kande-home .collection-section__heading {
+  margin-bottom: 52px;
+}
+
+.kande-home .collection-section__heading h2 {
+  color: #050b20;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.kande-home .collection-section__heading p {
+  margin-top: 10px;
+  color: #1a1f26;
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.kande-home .collection-section__rail-wrap {
+  position: relative;
+}
+
+.kande-home .collection-section__rail {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.kande-home .vehicle-card--collection {
+  min-width: 0;
+  border-radius: 15.5px;
+}
+
+.kande-home .vehicle-card--collection .vehicle-card__image-wrapper {
+  height: 212px;
+  aspect-ratio: auto;
+}
+
+.kande-home .vehicle-card--collection .vehicle-card__content {
+  min-height: 208px;
+  padding: 16px 29px 17px;
+}
+
+.kande-home .vehicle-card--collection .vehicle-card__title {
+  margin-bottom: 9px;
+  font-size: 17.45px;
+  line-height: 20.94px;
+}
+
+.kande-home .vehicle-card--collection .vehicle-card__subtitle {
+  font-size: 13.57px;
+  line-height: 13.57px;
+}
+
+.kande-home .vehicle-card--collection .vehicle-card__specs {
+  padding: 16px 0;
+}
+
+.kande-home .vehicle-card--collection .vehicle-card__specs span {
+  font-size: 13px;
+}
+
+.kande-home .vehicle-card--collection .vehicle-card__specs svg {
+  width: 17.45px;
+  height: 17.45px;
+}
+
+.kande-home .vehicle-card--collection .vehicle-card__footer {
+  padding-top: 10px;
+}
+
+.kande-home .vehicle-card--collection .vehicle-card__price {
+  font-size: 26px;
+}
+
+.kande-home .vehicle-card--collection .vehicle-card__a {
+  font-size: 15px;
+}
+
+.kande-home .vehicle-card__badge--collection {
+  top: 22px;
+  left: 19px;
+  height: 29px;
+  padding: 1px 13px;
+  border-radius: 10px;
+  background: #0096db;
+  font-size: 13px;
+}
+
+.kande-home .vehicle-card--collection .vehicle-card__favorite {
+  top: 19px;
+  right: 19px;
+  width: 35px;
+  height: 35px;
+}
+
+.kande-home .collection-section__arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(160, 160, 160, .72);
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.kande-home .collection-section__arrow::after {
+  position: absolute;
+  top: 16px;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  content: "";
+}
+
+.kande-home .collection-section__arrow--prev { left: -24px; }
+.kande-home .collection-section__arrow--prev::after { left: 20px; transform: rotate(-135deg); }
+.kande-home .collection-section__arrow--next { right: -24px; }
+.kande-home .collection-section__arrow--next::after { right: 20px; transform: rotate(45deg); }
+
+.kande-home .collection-section__more {
+  margin-top: 53px;
+  padding: 7px 25px;
+  border-radius: 8px;
+  color: #050b20;
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+}
+
+.kande-home .collection-section__more span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  border-radius: 50%;
+  color: #fff;
+  background: #0096db;
+}
+
+.kande-home .deal {
+  min-height: 1063px;
+  height: auto;
+  padding: 154px 0 0;
+  background-color: #050505;
+  background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url('/assets/images/home/deal-bg.png');
+}
+
+.kande-home .deal-inner {
+  grid-template-columns: minmax(0, 696px) minmax(0, 562px);
+  gap: 64px;
+  width: min(1322px, calc(100% - 190px));
+}
+
+.kande-home .deal h2 {
+  margin: 0 0 27px;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.kande-home .deal h3 {
+  margin: 0 0 39px;
+  color: #12b4ff;
+  font-family: "Poppins", sans-serif;
+  font-size: 68px;
+  line-height: 72px;
+}
+
+.kande-home .deal p {
+  max-width: 330px;
+  margin: 0 0 43px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.kande-home .deal-inner > div:first-child > p {
+  max-width: 400px;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 70px;
+}
+
+.kande-home .deal .timer {
+  width: 696px;
+  height: 302px;
+  margin-top: 0;
+  padding: 27px 37px;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+}
+
+.kande-home .deal .timer h4 {
+  margin: 0 0 17px;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.kande-home .deal .timer-box {
+  height: 199px;
+  padding: 62px 28px 22px;
+  border-radius: 20px;
+  gap: 13px;
+}
+
+.kande-home .deal .timer-box div {
+  height: 118px;
+  padding: 8px 3px;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 27px;
+}
+
+.kande-home .deal .timer-box b { font-size: 46px; }
+
+.kande-home .vehicle-card--deal {
+  width: 100%;
+  border-radius: 27px;
+}
+
+.kande-home .vehicle-card--deal .vehicle-card__image-wrapper {
+  height: 375px;
+  aspect-ratio: auto;
+}
+
+.kande-home .vehicle-card--deal .vehicle-card__content {
+  min-height: 367px;
+  padding: 27px 51px;
+}
+
+.kande-home .vehicle-card--deal .vehicle-card__title {
+  margin-bottom: 18px;
+  color: #050b20;
+  font-size: 31px;
+}
+
+.kande-home .vehicle-card--deal .vehicle-card__subtitle { color: #050b20; font-size: 20px; }
+.kande-home .vehicle-card--deal .vehicle-card__specs { padding: 20px 0; }
+.kande-home .vehicle-card--deal .vehicle-card__specs span { color: #050b20; font-size: 24px; }
+.kande-home .vehicle-card--deal .vehicle-card__price { color: #ed1a24; font-size: 45px; }
+
+.kande-home .vehicle-card__badge--deal {
+  top: 31px;
+  left: 28px;
+  height: 52px;
+  padding: 1px 30px;
+  border-radius: 12px;
+  background: #ed1a24;
+  font-size: 20px;
+}
+
+.kande-home .vehicle-card--deal .vehicle-card__badge--deal {
+  height: 52px;
+  padding: 1px 30px;
+  background: #ed1a24;
+  font-size: 20px;
+}
+
+.kande-home .vehicle-card--deal .vehicle-card__favorite {
+  top: 28px;
+  right: 28px;
+  width: 52px;
+  height: 52px;
+}
+
+@media (max-width: 1100px) {
+  .kande-home .collection-section__arrow--prev { left: -12px; }
+  .kande-home .collection-section__arrow--next { right: -12px; }
+  .kande-home .deal-inner {
+    grid-template-columns: 1fr;
+    width: min(100% - 48px, 696px);
+  }
+  .kande-home .vehicle-card--deal { width: 100%; }
+}
+
+@media (min-width: 1101px) and (max-width: 1322px) {
+  .kande-home .deal-inner {
+    grid-template-columns: minmax(0, 696fr) minmax(0, 562fr);
+    gap: 4.84%;
+  }
+
+  .kande-home .deal h3 {
+    font-size: clamp(42px, 4.5vw, 68px);
+    line-height: 1.06;
+  }
+
+  .kande-home .deal .timer {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 696 / 302;
+    padding: 3.88% 5.31%;
+  }
+
+  .kande-home .deal .timer h4 {
+    margin-bottom: 2.44%;
+    font-size: clamp(20px, 1.98vw, 30px);
+  }
+
+  .kande-home .deal .timer-box {
+    height: auto;
+    aspect-ratio: 622 / 199;
+    padding: 8.88% 4.5% 3.2%;
+    gap: 2.1%;
+  }
+
+  .kande-home .deal .timer-box div {
+    height: auto;
+    aspect-ratio: 131.5 / 118;
+    font-size: clamp(16px, 1.78vw, 27px);
+  }
+
+  .kande-home .deal .timer-box b {
+    font-size: clamp(28px, 3.04vw, 46px);
+  }
+
+  .kande-home .vehicle-card--deal .vehicle-card__image-wrapper {
+    height: auto;
+    aspect-ratio: 562 / 375;
+  }
+
+  .kande-home .vehicle-card--deal .vehicle-card__content {
+    min-height: 0;
+    aspect-ratio: 562 / 367;
+    padding: 4.8% 9.07%;
+  }
+
+  .kande-home .vehicle-card--deal .vehicle-card__title {
+    font-size: clamp(20px, 2.05vw, 31px);
+  }
+
+  .kande-home .vehicle-card--deal .vehicle-card__subtitle {
+    font-size: clamp(13px, 1.32vw, 20px);
+  }
+
+  .kande-home .vehicle-card--deal .vehicle-card__specs span {
+    font-size: clamp(15px, 1.59vw, 24px);
+  }
+
+  .kande-home .vehicle-card--deal .vehicle-card__price {
+    font-size: clamp(26px, 2.98vw, 45px);
+  }
+}
+
+@media (max-width: 767px) {
+  .kande-home .collection-section { padding: 58px 0; }
+  .kande-home .collection-section__heading { margin-bottom: 28px; padding: 0 16px; }
+  .kande-home .collection-section__heading h2 { font-size: 24px; line-height: 30px; }
+  .kande-home .collection-section__heading p { font-size: 13px; }
+  .kande-home .collection-section__rail-wrap { padding: 0 16px; }
+  .kande-home .collection-section__rail { display: flex; gap: 12px; overflow-x: auto; scrollbar-width: none; }
+  .kande-home .collection-section__rail::-webkit-scrollbar { display: none; }
+  .kande-home .vehicle-card--collection { flex: 0 0 280px; }
+  .kande-home .collection-section__arrow { display: none; }
+  .kande-home .deal { min-height: 0; padding: 72px 0; }
+  .kande-home .deal-inner { width: calc(100% - 32px); }
+  .kande-home .deal h3 { font-size: 42px; line-height: 46px; }
+  .kande-home .deal .timer { width: 100%; height: auto; }
+  .kande-home .deal .timer-box { height: auto; padding: 20px 10px; }
+  .kande-home .deal .timer-box div { height: auto; font-size: 14px; }
+  .kande-home .deal .timer-box b { font-size: 28px; }
+  .kande-home .vehicle-card--deal { width: 100%; }
+  .kande-home .vehicle-card--deal .vehicle-card__image-wrapper { height: auto; aspect-ratio: 3 / 2; }
+  .kande-home .vehicle-card--deal .vehicle-card__content { min-height: 0; padding: 18px; }
+  .kande-home .vehicle-card--deal .vehicle-card__badge--deal { top: 16px; left: 16px; height: 34px; padding: 1px 16px; font-size: 14px; }
+  .kande-home .vehicle-card--deal .vehicle-card__favorite { top: 14px; right: 14px; width: 38px; height: 38px; }
+}
+
 
 .cover-banners-main-slider {
   width: 549px;
@@ -3364,11 +3744,14 @@ p {
     
     
     button,select { font:inherit; }
-    .site-header { position:absolute; inset:0 0 auto; z-index:10; height:67px; border-bottom:1px solid rgba(255,255,255,.2); color:#fff; }
-    .header-inner { max-width:1320px; height:100%; margin:auto; padding:0 24px; display:grid; grid-template-columns:1fr auto 1fr; align-items:center; }
-    .brand img { width:104px; display:block; }
+    .site-header { position:absolute; inset:0 0 auto; z-index:10; height:67px; color:#fff; }
+    .header-inner { position:relative; max-width:1320px; height:100%; margin:auto; padding:0 24px; display:grid; grid-template-columns:1fr auto 1fr; align-items:center; }
+    .brand img { width:221px; display:block; }
     .main-nav { display:flex; gap:24px; align-items:center; }
     .main-nav a { color:#fff; text-decoration:none; text-transform:uppercase; font-size:10px; font-weight:700; }
+    .main-nav a.active { color:#fff; }
+    .menu-toggle { display:none; width:36px; height:36px; padding:8px; border:0; background:transparent; color:#fff; cursor:pointer; }
+    .menu-toggle span { display:block; height:2px; margin:4px 0; background:currentColor; }
     .account { justify-self:end; display:flex; align-items:center; gap:6px; color:#fff; font-size:12px; white-space:nowrap; }
     .account img { width:22px; height:22px; border-radius:50%; object-fit:cover; }
     .account span { color:#fff; opacity:.75; margin:0 5px; }
@@ -3427,8 +3810,8 @@ p {
     .blogs { padding-bottom:64px; }.blog-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }.blog img { display:block; width:100%; height:130px; object-fit:cover; border-radius:8px; }.blog small { display:block; margin-top:10px; color:#777; font-size:9px; }.blog h3 { margin:7px 0 0; font-size:13px; }
     .faq { position:relative; padding:0 0 55px; color:#fff; background:#050505 url('/assets/images/home/faq-bg.png') top center/cover no-repeat; }.faq::after { content:""; position:absolute; inset:0; background:linear-gradient(rgba(0,0,0,.15),#050505 48%); }.faq-inner { position:relative; z-index:1; padding-top:120px; }.faq .section-heading h2,.faq .section-heading p { color:#fff; }.accordion { max-width:980px; margin:auto; }.accordion-item { border:0; border-bottom:1px solid var(--blue); border-radius:0; background:transparent; }.accordion-button { padding:12px 0; color:#fff; background:transparent; box-shadow:none!important; font-size:12px; }.accordion-button:not(.collapsed) { color:#fff; background:transparent; }.accordion-
     footer { color:#fff; background:#079bd7; }.footer-top { display:flex; justify-content:space-between; align-items:center; padding:32px 0; border-bottom:1px solid rgba(255,255,255,.35); }.footer-top h3 { margin:0; font-size:16px; }.footer-top p { margin:4px 0 0; font-size:9px; }.newsletter { display:flex; overflow:hidden; width:360px; border:3px solid #fff; border-radius:30px; background:#fff; }.newsletter input { min-width:0; flex:1; border:0; padding:9px 14px; font-size:9px; }.newsletter button { width:72px; border:0; background:#fff; color:#111; font-size:9px; }.footer-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:30px; padding:28px 0; }.footer-grid h4 { font-size:11px; }.footer-grid a { display:block; margin:8px 0; color:#fff; text-decoration:none; font-size:9px; }.footer-bottom { display:flex; justify-content:space-between; padding:15px 0; border-top:1px solid rgba(255,255,255,.35); font-size:9px; }
-    @media (max-width:900px) { .header-inner { grid-template-columns:1fr auto; }.main-nav { display:none; }.hero-content { padding:130px 22px 20px; }.hero h1 { font-size:38px; }.search-wrap { position:relative; right:auto; bottom:auto; left:auto; margin-top:48px; }.search-box { grid-template-columns:repeat(2,1fr); }.advanced-filter { grid-template-columns:repeat(2,1fr); }.cards,.best .cards { grid-template-columns:repeat(2,1fr); }.deal-inner { grid-template-columns:1fr; }.quick-row { grid-template-columns:repeat(2,1fr); }.quick:nth-child(5){grid-column:span 2}.testimonial-grid { grid-template-columns:1fr 1fr; }.testimonial.large { grid-row:auto; }.video-grid { grid-template-columns:1fr; }.footer-grid { grid-template-columns:repeat(2,1fr); } }
-    @media (max-width:576px) { .hero h1 { font-size:32px; }.hero-benefits { margin-bottom:30px; }.search-box,.advanced-filter { grid-template-columns:1fr; }.cards,.best .cards,.testimonial-grid,.blog-grid { grid-template-columns:1fr; }.container-wide,.deal-inner { width:min(100% - 32px,1320px); }.browse-panel { margin:0 16px; }.browse-row { overflow:auto; justify-content:flex-start; }.browse-item { min-width:68px; }.footer-top,.footer-bottom { display:block; }.newsletter { width:100%; margin-top:18px; }.footer-grid { grid-template-columns:1fr 1fr; } }
+    @media (max-width:900px) { .header-inner { grid-template-columns:1fr auto auto; padding:0 18px; }.brand img { width:170px; }.main-nav { position:absolute; top:67px; right:18px; left:18px; display:none; flex-direction:column; align-items:stretch; gap:0; padding:8px 0; background:rgba(5,8,12,.96); box-shadow:0 10px 22px rgba(0,0,0,.2); }.main-nav--open { display:flex; }.main-nav a { padding:12px 18px; font-size:11px; }.menu-toggle { display:block; justify-self:end; }.account { font-size:10px; }.account img { width:24px; height:24px; }.hero-content { padding:130px 22px 20px; }.hero h1 { font-size:38px; }.search-wrap { position:relative; right:auto; bottom:auto; left:auto; margin-top:48px; }.search-box { grid-template-columns:repeat(2,1fr); }.advanced-filter { grid-template-columns:repeat(2,1fr); }.cards,.best .cards { grid-template-columns:repeat(2,1fr); }.deal-inner { grid-template-columns:1fr; }.quick-row { grid-template-columns:repeat(2,1fr); }.quick:nth-child(5){grid-column:span 2}.testimonial-grid { grid-template-columns:1fr 1fr; }.testimonial.large { grid-row:auto; }.video-grid { grid-template-columns:1fr; }.footer-grid { grid-template-columns:repeat(2,1fr); } }
+    @media (max-width:576px) { .header-inner { padding:0 14px; }.brand img { width:145px; }.account { gap:0; font-size:0; }.account span { display:none; }.account img { width:28px; height:28px; }.main-nav { right:14px; left:14px; }.hero h1 { font-size:32px; }.hero-benefits { margin-bottom:30px; }.search-box,.advanced-filter { grid-template-columns:1fr; }.cards,.best .cards,.testimonial-grid,.blog-grid { grid-template-columns:1fr; }.container-wide,.deal-inner { width:min(100% - 32px,1320px); }.browse-panel { margin:0 16px; }.browse-row { overflow:auto; justify-content:flex-start; }.browse-item { min-width:68px; }.footer-top,.footer-bottom { display:block; }.newsletter { width:100%; margin-top:18px; }.footer-grid { grid-template-columns:1fr 1fr; } }
 
 
 
@@ -3439,7 +3822,7 @@ p {
   .page-placeholder { min-height:52vh; display:flex; align-items:center; justify-content:center; text-align:center; padding:120px 0; }
   .page-placeholder h1 { font-size:40px; font-weight:700; color:#080808; margin:0 0 12px; }
   .page-placeholder p { color:#68707b; font-size:15px; margin:0; }
-  .kande-home .site-header--solid { position:absolute; top:0; left:0; right:0; z-index:20; background:rgba(5,8,12,.34); border-bottom:1px solid rgba(255,255,255,.18); }
+  .kande-home .site-header--solid { position:absolute; top:0; left:0; right:0; z-index:20; background:rgba(5,8,12,.34); }
   .kande-home .faq { background-image:url('/assets/images/home/faq-bg.png') !important; }
   .kande-home footer { display:block !important; min-height:360px; color:#fff !important; background:#079bd7 !important; }
   .kande-home footer a,.kande-home .footer-grid h4,.kande-home .footer-bottom { color:#fff !important; }
@@ -3459,3 +3842,641 @@ p {
 
 /* ---- Browse icons ---- */
 .kande-home .browse-item .browse-icon { display:block; width:34px; height:26px; margin:0 auto 6px; object-fit:contain; filter:brightness(0) invert(1); }
+
+.kande-home {
+  .hero {
+    height: 686px;
+    min-height: 686px;
+  }
+
+  .hero-content {
+    max-width: 1322px;
+    min-height: 686px;
+    padding: 222px 0 0;
+  }
+
+  .hero::after {
+    background: rgba(0, 0, 0, .53);
+  }
+
+  .kicker {
+    margin-bottom: 7px;
+    font-family: "Inter", sans-serif;
+    font-size: 26.258px;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+
+  .hero h1 {
+    max-width: 900px;
+    font-family: "Inter", sans-serif;
+    font-size: 49.89px;
+    line-height: 1.12;
+    font-weight: 700;
+  }
+
+  .hero-benefits {
+    gap: 21px;
+    margin-top: 22px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+  }
+
+  .hero-benefits li::before {
+    content: "✓";
+    width: 17.5px;
+    height: 17.5px;
+    margin-right: 5px;
+    background: #0096db;
+    font-size: 11px;
+    line-height: 17.5px;
+  }
+
+  .search-wrap {
+    z-index: 5;
+    right: 0;
+    bottom: 45px;
+    left: 0;
+  }
+
+  .tabs button {
+    height: 33px;
+    padding: 0 17px;
+    border-radius: 10px 10px 0 0;
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+  }
+
+  .search-box {
+    min-height: 93px;
+    padding: 22px 17px 20px;
+    border: 1px solid rgba(255, 255, 255, .88);
+    border-radius: 0 10px 10px 10px;
+    gap: 10px;
+  }
+
+  .advanced-stack {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 4;
+    display: none;
+    margin-top: 8px;
+    color: #111;
+  }
+
+  .advanced-stack.open {
+    display: block;
+  }
+
+  .advanced-stack .advanced-filter {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 17px 24px;
+    min-height: 274px;
+    padding: 14px 18px 12px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 4px 9px rgba(0, 0, 0, .22);
+  }
+
+  .field label {
+    margin-bottom: 6px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+  }
+
+  .field select,
+  .icon-btn,
+  .search-btn {
+    height: 38px;
+    border-radius: 5px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+  }
+
+  .browse {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    min-height: 641px;
+    padding: 65px 0 71px;
+  }
+
+  .browse-panel {
+    display: grid;
+    grid-template-columns: minmax(0, 930px) 280px;
+    gap: 53px;
+    width: min(1322px, calc(100% - 40px));
+    height: 505px;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, .16);
+    border-radius: 20px;
+    background: rgba(0, 0, 0, .5);
+    box-shadow: 0 10.686px 13.358px rgba(0, 0, 0, .14);
+  }
+
+  .browse-main {
+    min-width: 0;
+  }
+
+  .browse-panel h3 {
+    margin: 0 0 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+  .browse-main .browse-row:first-of-type {
+    height: 100px;
+    margin: -2px 0 36px;
+  }
+
+  .browse-main .browse-row:nth-of-type(2) {
+    height: 71px;
+    margin: 29px 0 28px;
+  }
+
+  .browse-row {
+    gap: 0;
+  }
+
+  .browse-item {
+    min-width: 0;
+    gap: 8px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+  }
+
+  .browse-icon {
+    width: 56px;
+    height: 56px;
+  }
+
+  .browse-main .browse-row:nth-of-type(2) .browse-icon {
+    width: 59px;
+    height: 29px;
+  }
+
+  .quick-row {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 17px;
+  }
+
+  .quick {
+    position: relative;
+    overflow: hidden;
+    min-height: 134px;
+    padding: 12px 13px;
+    border-radius: 20px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+  }
+
+  .quick b {
+    font-size: 15px;
+  }
+
+  .quick::after {
+    position: absolute;
+    top: 24px;
+    left: 127px;
+    width: 64px;
+    height: 24px;
+    border-radius: 12px;
+    background: #1f2e42;
+    content: "";
+  }
+
+  .quick:nth-child(1) { background: #1fb873; }
+  .quick:nth-child(2) { background: #ffc71f; }
+  .quick:nth-child(3) { background: #f27a1f; }
+  .quick:nth-child(4) { background: #1f8cf2; }
+
+  .smart-panel {
+    display: grid;
+    grid-template-rows: 223px 218px;
+    gap: 15px;
+  }
+
+  .smart-card {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 16px 21px;
+    border: 1px solid #dbe0e8;
+    border-radius: 20px;
+    color: #0a294f;
+    background: #f5faff;
+    text-decoration: none;
+  }
+
+  .smart-card b {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+  .smart-card span {
+    max-width: 150px;
+    margin-top: 13px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.3;
+    color: #1a1f26;
+  }
+
+  .smart-card::after {
+    position: absolute;
+    top: 68px;
+    left: 180px;
+    width: 61px;
+    height: 72px;
+    border-radius: 11px;
+    background: #1459b8;
+    content: "";
+  }
+
+  .smart-card:nth-child(2)::after {
+    background: #ffc71f;
+  }
+
+  .white-section {
+    padding: 95px 0;
+  }
+
+  .container-wide {
+    width: min(1322px, calc(100% - 190px));
+  }
+
+  .cards,
+  .best .cards {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .vehicle-card {
+    overflow: hidden;
+    border: 1px solid #e9e9e9;
+    border-radius: 16px;
+    background: #fff;
+  }
+
+  .vehicle-card__image-wrapper {
+    height: 212px;
+  }
+
+  .vehicle-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .vehicle-card__badge {
+    top: 22px;
+    left: 19px;
+    padding: 5px 13px;
+    border-radius: 10px;
+    background: #0096db;
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+  }
+
+  .vehicle-card__favorite {
+    top: 19px;
+    right: 19px;
+    width: 35px;
+    height: 35px;
+  }
+
+  .vehicle-card__content {
+    min-height: 208px;
+    padding: 16px 29px 17px;
+  }
+
+  .vehicle-card__title {
+    margin-bottom: 9px;
+    color: #050b20;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+    line-height: 21px;
+  }
+
+  .vehicle-card__subtitle,
+  .vehicle-card__specs,
+  .vehicle-card__from,
+  .vehicle-card__old-price {
+    color: #050b20;
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+  }
+
+  .vehicle-card__specs {
+    padding: 16px 0;
+    border-top: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+  }
+
+  .vehicle-card__specs svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .vehicle-card__footer {
+    padding-top: 10px;
+  }
+
+  .vehicle-card__price {
+    color: #111;
+    font-family: "DM Sans", sans-serif;
+    font-size: 26px;
+  }
+
+  .vehicle-card__a {
+    color: #405ff2;
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+  }
+
+  .deal {
+    height: 1062px;
+    padding: 154px 0 0;
+  }
+
+  .deal-inner {
+    grid-template-columns: minmax(0, 696px) minmax(0, 562px);
+    gap: 64px;
+    width: min(1322px, calc(100% - 190px));
+  }
+
+  .deal h3 {
+    margin: 0 0 39px;
+    font-family: "Poppins", sans-serif;
+    font-size: 68px;
+    line-height: 1.06;
+  }
+
+  .deal .timer {
+    width: 696px;
+    height: 302px;
+    padding: 27px 37px;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+  }
+
+  .deal .timer h4 {
+    margin-bottom: 17px;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+  }
+
+  .deal .timer-box {
+    height: 199px;
+    padding: 62px 28px 22px;
+    border-radius: 20px;
+    gap: 13px;
+  }
+
+  .deal .timer-box div {
+    height: 118px;
+    padding: 8px 3px;
+    border-radius: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 27px;
+  }
+
+  .deal .timer-box b {
+    font-size: 46px;
+  }
+
+  .deal-card {
+    border-radius: 27px;
+  }
+
+  .deal-card .car-image {
+    height: 375px;
+  }
+
+  .deal-card .car-info {
+    min-height: 367px;
+    padding: 27px 51px;
+  }
+
+  .deal-card .car-info h3 {
+    margin-bottom: 18px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 31px;
+  }
+
+  .deal-card .specs {
+    padding: 20px 0;
+    font-size: 24px;
+  }
+
+  .deal-card .price strong {
+    color: #ed1a24;
+    font-size: 45px;
+  }
+
+  .best {
+    min-height: 1411px;
+  }
+
+  .compare img {
+    display: block;
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+  }
+
+  .video-section {
+    min-height: 1066px;
+    padding: 95px 0;
+  }
+
+  .faq {
+    min-height: 1011px;
+  }
+
+  .kande-home footer {
+    min-height: 600px;
+  }
+
+  @media (max-width: 1100px) {
+    .hero-content,
+    .deal-inner,
+    .container-wide {
+      width: min(100% - 48px, 1322px);
+    }
+
+    .browse-panel {
+      grid-template-columns: minmax(0, 1fr);
+      height: auto;
+    }
+
+    .smart-panel {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-rows: 180px;
+    }
+
+    .deal {
+      height: auto;
+      min-height: 1062px;
+    }
+
+    .deal-inner {
+      grid-template-columns: 1fr;
+    }
+
+    .deal .timer {
+      width: 100%;
+    }
+
+    .cards,
+    .best .cards {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 576px) {
+    .hero {
+      height: auto;
+      min-height: 720px;
+    }
+
+    .hero-content {
+      width: 100%;
+      min-height: 720px;
+      padding: 150px 18px 20px;
+    }
+
+    .kicker {
+      font-size: 19px;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+    }
+
+    .hero-benefits {
+      gap: 10px;
+      font-size: 12px;
+    }
+
+    .search-wrap {
+      right: 18px;
+      bottom: 24px;
+      left: 18px;
+    }
+
+    .advanced-stack .advanced-filter {
+      grid-template-columns: 1fr;
+      min-height: 0;
+      max-height: calc(100vh - 120px);
+      overflow-y: auto;
+    }
+
+    .browse {
+      min-height: 0;
+      padding: 24px 0;
+    }
+
+    .browse-panel {
+      width: calc(100% - 28px);
+      height: auto;
+      padding: 22px 16px;
+      gap: 24px;
+    }
+
+    .browse-row {
+      overflow-x: auto;
+      justify-content: flex-start;
+      gap: 18px;
+      padding-bottom: 7px;
+    }
+
+    .browse-item {
+      min-width: 74px;
+    }
+
+    .browse-main .browse-row:first-of-type,
+    .browse-main .browse-row:nth-of-type(2) {
+      height: auto;
+      margin: 12px 0 24px;
+    }
+
+    .quick-row {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .quick {
+      min-height: 105px;
+    }
+
+    .smart-panel {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 145px);
+    }
+
+    .container-wide,
+    .deal-inner {
+      width: calc(100% - 32px);
+    }
+
+    .white-section {
+      padding: 58px 0;
+    }
+
+    .cards,
+    .best .cards {
+      grid-template-columns: 1fr;
+    }
+
+    .deal {
+      padding: 72px 0;
+    }
+
+    .deal h3 {
+      font-size: 43px;
+    }
+
+    .deal .timer {
+      height: auto;
+      padding: 20px 14px;
+    }
+
+    .deal .timer-box {
+      height: auto;
+      padding: 15px 8px;
+    }
+
+    .deal .timer-box div {
+      height: 92px;
+      font-size: 13px;
+    }
+
+    .deal .timer-box b {
+      font-size: 30px;
+    }
+
+    .deal-card .car-info {
+      padding: 20px;
+    }
+
+    .deal-card .car-image {
+      height: 230px;
+    }
+
+    .compare img {
+      height: auto;
+    }
+
+    .video-section,
+    .faq {
+      min-height: 0;
+    }
+  }
+}

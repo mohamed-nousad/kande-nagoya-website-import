@@ -19,6 +19,7 @@ const VehicleCard = ({
   badgeText = "Great Price",
   badgeClassName = "",
   badgeIcon = null,
+  cardClassName = "",
 }) => {
   const navigate = useNavigate();
   const { isSaved, toggle, isLoading, isLoggedIn } = useFavourite(vehicle?.id);
@@ -38,7 +39,7 @@ const VehicleCard = ({
   const navigateToViewDetail = () => navigate(`/listing-detail-v6/${vehicle?.id}`);
 
   return (
-    <article className="vehicle-card" onClick={navigateToViewDetail}>
+    <article className={`vehicle-card ${cardClassName}`.trim()} onClick={navigateToViewDetail}>
       <div className="vehicle-card__image-wrapper">
         <img
           src={vehicle.image}

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import VehicleCard from "@/components/home/VehicleCard";
 import { featuredDeal } from "@/data/homeShowcaseData";
 
 function useCountdown(initialSeconds) {
@@ -45,25 +45,12 @@ export default function DealSection() {
             </div>
           </div>
         </div>
-        <div className="deal-card">
-          <div className="car-image" style={{ backgroundImage: `url("${featuredDeal.image}")` }} />
-          <div className="car-info">
-            <h3>{featuredDeal.title}</h3>
-            <p>{featuredDeal.subtitle}</p>
-            <div className="specs">
-              <span>{featuredDeal.mileage}</span>
-              <span>{featuredDeal.fuel}</span>
-              <span>{featuredDeal.transmission}</span>
-            </div>
-            <div className="price">
-              <div>
-                <small>from {featuredDeal.price}</small>
-                <strong>{featuredDeal.discountPrice}</strong>
-              </div>
-              <Link className="details" to="/stock-list">View Details &#8599;</Link>
-            </div>
-          </div>
-        </div>
+        <VehicleCard
+          vehicle={featuredDeal}
+          badgeText="Best Deals"
+          badgeClassName="vehicle-card__badge--deal"
+          cardClassName="vehicle-card--deal"
+        />
       </div>
     </section>
   );

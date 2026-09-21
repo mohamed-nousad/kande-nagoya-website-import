@@ -28,7 +28,6 @@ const QUICK = [
   { title: "All Under", sub: "LKR 2M" },
   { title: "Trucks & Vans", sub: "" },
   { title: "SUV/MPV", sub: "" },
-  { title: "Smart Matching", sub: "AI-powered vehicle recommendations." },
 ];
 
 const PLACEHOLDER = "/assets/icons/default-placeholder.svg";
@@ -42,42 +41,55 @@ export default function BrowseSection() {
   return (
     <section className="browse">
       <div className="browse-panel">
-        <h3>Browse by Brand</h3>
-        <div className="browse-row">
-          {BRANDS.map((item) => (
-            <Link
-              key={item.name}
-              to={`/stock-list?brand=${encodeURIComponent(item.name)}`}
-              className="browse-item"
-            >
-              <img className="browse-icon" src={item.icon} alt={item.name} onError={onIconError} />
-              {item.name}
-            </Link>
-          ))}
+        <div className="browse-main">
+          <h3>Browse by Brand</h3>
+          <div className="browse-row">
+            {BRANDS.map((item) => (
+              <Link
+                key={item.name}
+                to={`/stock-list?brand=${encodeURIComponent(item.name)}`}
+                className="browse-item"
+              >
+                <img className="browse-icon" src={item.icon} alt={item.name} onError={onIconError} />
+                {item.name}
+              </Link>
+            ))}
+          </div>
+
+          <h3>Browse by Body Type</h3>
+          <div className="browse-row">
+            {BODY_TYPES.map((item) => (
+              <Link
+                key={item.name}
+                to={`/stock-list?body=${encodeURIComponent(item.name)}`}
+                className="browse-item"
+              >
+                <img className="browse-icon" src={item.icon} alt={item.name} onError={onIconError} />
+                {item.name}
+              </Link>
+            ))}
+          </div>
+
+          <div className="quick-row">
+            {QUICK.map((q) => (
+              <Link key={q.title} to="/stock-list" className="quick">
+                <b>{q.title}</b>
+                {q.sub ? <small>{q.sub}</small> : null}
+              </Link>
+            ))}
+          </div>
         </div>
 
-        <h3>Browse by Body Type</h3>
-        <div className="browse-row">
-          {BODY_TYPES.map((item) => (
-            <Link
-              key={item.name}
-              to={`/stock-list?body=${encodeURIComponent(item.name)}`}
-              className="browse-item"
-            >
-              <img className="browse-icon" src={item.icon} alt={item.name} onError={onIconError} />
-              {item.name}
-            </Link>
-          ))}
-        </div>
-
-        <div className="quick-row">
-          {QUICK.map((q) => (
-            <Link key={q.title} to="/stock-list" className="quick">
-              <b>{q.title}</b>
-              {q.sub ? <small>{q.sub}</small> : null}
-            </Link>
-          ))}
-        </div>
+        <aside className="smart-panel">
+          <Link className="smart-card" to="/stock-list">
+            <b>Smart Matching</b>
+            <span>AI-powered vehicle recommendations.</span>
+          </Link>
+          <Link className="smart-card" to="/stock-list">
+            <b>Smart Auction</b>
+            <span>Bid smarter with clear market guidance.</span>
+          </Link>
+        </aside>
       </div>
     </section>
   );

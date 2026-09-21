@@ -103,10 +103,12 @@ export default function HeroSearch() {
             <button
               type="button"
               className="icon-btn"
+              aria-label="More vehicle filters"
               aria-expanded={open}
+              aria-controls="advanced-vehicle-filters"
               onClick={() => setOpen((v) => !v)}
             >
-              &#9783;
+              &#9776;
             </button>
             <button
               type="button"
@@ -117,7 +119,10 @@ export default function HeroSearch() {
             </button>
           </div>
 
-          <div className={`advanced-stack${open ? " open" : ""}`}>
+          <div
+            id="advanced-vehicle-filters"
+            className={`advanced-stack${open ? " open" : ""}`}
+          >
             <AdvancedFilter />
           </div>
         </div>
